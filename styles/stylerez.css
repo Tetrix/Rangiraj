@@ -1,0 +1,65 @@
+
+.div-inline
+			{
+				display:inline-block;
+			}
+
+.navbar_text
+			{
+				color:White;
+				font-style:bold;
+			}	
+
+
+			
+			
+.navigationbar	
+			{
+			   	font-size:10px;
+				
+				top:290px;
+				left:0;
+				right:0;
+				height:45px;
+			}
+			
+.navbar_style
+			{
+				background-color:#344A5F;
+			}
+			
+	ul.nav a:hover  { background:#2D3E52;  }
+	ul.nav a:focus  { background:#2D3E52;  }
+
+
+.gevrek
+		{
+			background:#2D3E52; 
+		}	
+
+
+
+
+			
+.paragrafTxT	
+		{
+			font-size:15px;
+			color:black;
+			text-align:center;
+			font-weight:bold;
+		}
+
+				
+.scrolling
+		{
+			overflow-y: scroll;
+			max-height: 380px;
+		}
+.jumbotron
+		{
+			background-color:#2D3E52;
+			border:0px;
+			margin:0px;
+			color:White;
+		}
+	

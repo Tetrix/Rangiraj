@@ -1,0 +1,81 @@
+#logoposition	
+				{
+					
+					left:50px;
+				}
+	
+.header
+			{
+				background-color:#2D3E52;
+				color:white;
+				position:fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				height:130px;
+			}
+
+
+.navigationbar	
+			{
+			   	font-size:30px;
+				position:fixed;
+				top:130px;
+				left:0;
+				right:0;
+				height:45px;
+			}
+
+
+.main 		
+			{	
+				position:fixed;
+				color:black;
+				top:205px;
+				bottom:100px;
+				left:0;
+				right:0;
+			}
+
+
+.footer
+			{
+				background-color:#2D3E52;
+				color:white;
+				position:fixed;
+				height:75px;
+				bottom:0;
+				left:0;
+				right:0;
+			}
+
+			
+.navbar_text
+			{
+				color:White;
+				font-style:bold;
+			}
+			
+			
+.navbar_style
+			{
+				background-color:#344A5F;
+			}
+			
+	
+	ul.nav a:hover  { background:#2D3E52; }
+	ul.nav a:focus  { background:#2D3E52; }
+
+	
+.fromright	
+			{
+				right:50px;
+			}
+
+
+
+.gevrek	
+			{
+				background:#2D3E52;
+			}
+
