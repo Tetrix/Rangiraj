@@ -1,6 +1,10 @@
 ja pisuvam na prva linija - pero
+<<<<<<< HEAD
 
 
 
+gomnari jadat tirici
 
-perica bese tuka a
+=======
+-ÑÈìå Òîï÷å
+>>>>>>> efb687c7dddf715bb6677d7b1a751fb76bbee45c
