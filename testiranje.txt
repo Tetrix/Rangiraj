@@ -1,10 +1,11 @@
 ja pisuvam na prva linija - pero
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
-gomnari jadat tirici
-
-=======
+gomnari jadat tiri
 -ÑÈìå Òîï÷å
->>>>>>> efb687c7dddf715bb6677d7b1a751fb76bbee45c
+
+
+ja pisuvam vtora
