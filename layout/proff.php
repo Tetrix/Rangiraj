@@ -16,14 +16,14 @@
 		
 		
 </head>
-
+<br><br><br>
 <div class="row">
 
 <div class="col-sm-3"> </div>
 
 			<div class="col-sm-6">
 			
-					<div class="jumbotron" id="jumbo1">
+					<div class="jumbotron" id="jumboproff">
 						
 							<ul>
 								<li><a href="#" data-reveal-id="myModal5"  class="nounderline"> Професор 1 </a> </li>

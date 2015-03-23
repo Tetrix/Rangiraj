@@ -1,6 +1,6 @@
 <div class="main" id="pozadinalogin">
 	
-			<BR><BR><BR><BR>
+			<BR><BR><br>
 			
 <div class ="row">
 		
@@ -10,13 +10,13 @@
 									<div class="jumbotron" id="jumbologin">
 										
 												<center>
-															<img src="pictures\lock.png">
-															<h2 align="center" Id="txtlogin"> Логирајте се </h2>
+															<img src="pictures\lock.png" height="120" width="120">
+															<div  Id="txtlogin"> Најавете  се </div>
 												</center>
 												
 													<form role="form">
 														<div class="form-group">
-																			<br>
+																			
 															<div class="form-group has-feedback">
 																	<label class="control-label" id="txt">Мејл:</label>
 																	<input type="text" class="form-control" placeholder="Внесете го регистрираниот студентски мејл" />
@@ -28,7 +28,7 @@
 																	<input type="password" class="form-control" placeholder="Внесете ја регистрираната лозинка" />
 																	<i class="glyphicon glyphicon-lock form-control-feedback"></i>
 															</div>
-																			<br>
+																			
 														</div>
 													</form>
 											

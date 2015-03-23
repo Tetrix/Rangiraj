@@ -3,20 +3,23 @@
 							position:fixed;
 							background-color:#2D3E52;
 							width: 100%;
+							height:16%;
+							
 				}
 				
 #txt 	
 				{
 							color: white;
 							font-family:Ubuntu;
-							font-size:15px;
-							font-weight:bold;
+							font-size:85%;
+						
 							text-align:justify;
 							
 				}	
 
 #txtlogin	
 				{
+							font-size:150%;
 							color: white;
 							font-family:Ubuntu;
 	
@@ -26,14 +29,18 @@
 				{
 							color: white;
 							font-family:Ubuntu;
+							text-align:justify;
+							
+							font-size:90%;
 	
 				}					
+				
 
 #txt2 	
 				{
 							color: white;
 							font-family:Ubuntu;
-							font-size:20px;
+						
 				}	
 				
 #txt3 	
@@ -49,7 +56,7 @@
 				{
 							border-radius:0;
 							font-family:Ubuntu;
-							font-size:20px;
+							
 							
 				}
 				
@@ -61,29 +68,33 @@
 
 .navigationbar	
 				{
-							font-size:30px;
-							top:130px;
-							left:0;
-							right:0;
-							height:72px;
+							position:fixed;
 							background-color:#344A5F;
-						
+							top:15%;
+							height:5%;
+							
+							
+							
+					
 				}
 				
 			
 .navbar_text
 				{
+							font-size:150%;
 							vertical-align: middle;
 							color:White;
 							font-style:bold;
 							font-family:Ubuntu;
-							font-size:28px;
+						
 				}
 				
 
 .bg		
 				{
+							
 							background:#344A5F;
+					
 				}
 				
 .rangkopcinja
@@ -104,27 +115,30 @@
 							font-size:20px;
 				}			
 
-.glyphicon 
-				{
-							font-size: 22px;
-				}		
+	
 
 .glyphicon.glyphicon-log-in {
-    font-size: 17px;
+		
 }	
 
 .glyphicon.glyphicon-plus {
-    font-size: 18px;
+ 
 }	
 
 .glyphicon.glyphicon-user {
-    font-size: 20px;
+  
 }	
 	
 #jumbologin 
 					{
 							 background: rgba(45, 62, 82, 0.7);
-					}		
+					}
+					
+#jumbologin1 
+					{
+							 background: rgba(45, 62, 82, 0.7);
+							 padding: 15px !important;
+					}	
 
 .modalbg	
 					{

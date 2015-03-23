@@ -38,7 +38,7 @@
 				<div class="col-sm-3"> 
 				
 					<a href="index.php?page=pocetna">	
-							<img src="pictures\Logo.png"  height="130" width="250"  >  
+							<img src="pictures\Logo.png"  height="100" width="180"  >  
 					</a>
 					
 				</div>
@@ -48,10 +48,10 @@
 				
 				<div class="col-sm-2">
 				
-					<br><br>
+					<br>
 					
 					<a href="index.php?page=najavise"  class="nounderline">
-							<button id="d3" type="button" class="btn btn-lg btn-default btn-block sharp"><span class="glyphicon glyphicon-log-in"></span> Најави се </button>
+							<button id="d3" type="button" class="btn btn-md btn-default btn-block sharp"><span class="glyphicon glyphicon-log-in"></span> Најави се </button>
 					</a>
 					
 							<!--ЛогиранТЕКСТ-->
@@ -63,15 +63,15 @@
 				
 				<div class="col-sm-2">
 						
-						<br><br>
+						<br>
 						
 						<a href="index.php?page=registrirajse" class="nounderline">
-							<button id="d4" type="button" class="btn btn-lg btn-default btn-block sharp"><span class="glyphicon glyphicon-plus"></span> Регистрирај се </button>
+							<button id="d4" type="button" class="btn btn-md btn-default btn-block sharp"><span class="glyphicon glyphicon-plus"></span> Регистрирај се </button>
 						</a>
 						
 						<!--LogoutKopce-->
 						<a  class="nounderline">
-							<button id="button1" type="button" onclick="showMore()" class="btn btn-lg btn-default btn-block sharp"><span class="glyphicon glyphicon-log-out"></span> Одјави се </button>
+							<button id="button1" type="button" onclick="showMore()" class="btn btn-md btn-default btn-block sharp"><span class="glyphicon glyphicon-log-out"></span> Одјави се </button>
 						</a>
 						
 				</div>
@@ -87,27 +87,27 @@
 		</div>
 		
 		<!--NavigationBar-->
-		<div class="row">
-			<div class="col-sm-12">
+	<div class="row">
+		<div class="col-sm-12">
 					<div class="navigationbar">
 						<nav class="navbar navbar-custom ">
-								<div class="container-fluid"> 
-										<div class="navbar-header">
+								
+										<div class="	bg">
 									
-												  <ul  class="nav nav-justified bg" >
+												  <ul  class="nav nav-justified " >
 																	<li></li>
 																	<li id="pocetna"><a href="index.php?page=pocetna" >           <p class="navbar_text "><span class="glyphicon glyphicon-home"></span> Почетна        </p></a></li>
 																	<li id="rangiraj"><a href="index.php?page=rangiraj" >      	  <p class="navbar_text"><span class="glyphicon glyphicon-star"></span> Рангирај       </p></a></li>
-																	<li id="rezultati"><a href="index.php?page=rezultati" >     	     	<p class="navbar_text"><span class="glyphicon glyphicon-list"></span> Резултати      </p></a></li>
+																	<li id="rezultati"><a href="index.php?page=rezultati" >     	     	<p class="navbar_text"><span class="glyphicon glyphicon-list"></span> &nbspРезултати      </p></a></li>
 																	<li id="zanas"><a href="index.php?page=zanas ">       				<p class="navbar_text"><span class="glyphicon glyphicon-info-sign"></span> За Нас 			</p></a></li>
 																	<li></li>
 												  </ul>
 							 
 										</div>
-								</div>
+								
 						</nav>
 					</div>
-			</div>
+		</div>
 		</div>
 
 </div>

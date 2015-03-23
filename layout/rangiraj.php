@@ -23,21 +23,21 @@
 	<div class="col-sm-1"> </div>
 		
 		<div class="col-sm-10"> 
-				<div class="jumbotron" id="jumbo">
+				
 					
 							<h1 id="textjumbo"> Рангирање </h1>
 						
-							<p id="textjumbo"> Овде може да ги рангирате професорите, кампусите на вашиот факултет како и самиот факултет. <br> Тоа го правите со кликање на едно од копчињата подолу </p>
+							<h4 id="textjumbo2"> Овде може да ги рангирате професорите, кампусите на вашиот факултет како и самиот факултет. <br> Тоа го правите со кликање на едно од копчињата подолу </h4>
 							
-							<small id="textjumbo"> Напомена: Факултетот, кампусот и Професорите кои ќе ги оценувате се лимитирани на факултеот што сте го одбрале при регистрација. </small>
+							<p id="textjumbo3"> Напомена: Факултетот, кампусот и Професорите кои ќе ги оценувате се лимитирани на факултеот што сте го одбрале при регистрација. </p>
 				
-				</div>
+			
 		</div>
 		
 		<div class="col-sm-1"> </div>
 		
 </div>	
-	
+	<br>
 	<div class="row">
 	
 		<div class="col-sm-3"></div>
@@ -45,7 +45,7 @@
 		<div class="col-sm-2">
 												
 			<a href="#" data-reveal-id="myModal"  class="nounderline">
-				<button type="button" class="btn btn-lg rangkopcinja btn-block sharp" id="txt2"> Факултет </button>
+				<button type="button" class="btn btn-md rangkopcinja btn-block sharp" id="txt2"> Факултет </button>
 			</a>
 			
 			<br>
@@ -56,7 +56,7 @@
 		<div class="col-sm-2">
 										
 			<a href="#" data-reveal-id="myModal2"  class="nounderline">
-				<button type="button" class="btn btn-lg rangkopcinja btn-block sharp" id="txt2"> Кампус </button>
+				<button type="button" class="btn btn-md rangkopcinja btn-block sharp" id="txt2"> Кампус </button>
 			</a>
 				
 			<br>				
@@ -67,7 +67,7 @@
 					
 									
 			<a href="index.php?page=proff"  class="nounderline">
-				<button type="button" class="btn btn-lg rangkopcinja btn-block sharp" id="txt2"> Професор </button>
+				<button type="button" class="btn btn-md rangkopcinja btn-block sharp" id="txt2"> Професор </button>
 			</a>	
 								
 			<br>

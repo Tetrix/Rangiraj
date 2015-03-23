@@ -8,23 +8,23 @@
 						
 </head>
 
-			<BR><BR><BR><BR>
+			<BR><BR>
 			
 <div class ="row">
 		
 			<div class="col-sm-4"></div>
 				
 			<div class="col-sm-4">
-									<div class="jumbotron" id="jumbologin">
+									<div class="jumbotron" id="jumbologin1">
 										
 												<center>
 															<h2 align="center" Id="txtlogin"> Регистрирајте  се </h2>
-															<small id="txtwarn">Одберете го вашиот универзитет/факултет поради тоа што ќе можете да гласате само за истиот што се го одбрале, и тоа еднаш по семестар </small>
+													<p id="txtwarn">Одберете го вашиот универзитет/факултет поради тоа што ќе можете да гласате само за истиот што се го одбрале, и тоа еднаш по семестар </p> 		
 												</center>
 												
 													<form role="form">
 														<div class="form-group">
-																			<br>
+																			
 															<div class="form-group has-feedback">
 																	<label class="control-label" id="txt">Мејл:</label>
 																	<input type="text" class="form-control" placeholder="Регистрирајте се со студентскиот мејл" />
@@ -43,8 +43,7 @@
 																	<i class="glyphicon glyphicon-lock form-control-feedback"></i>
 															</div>
 																	
-																
-																<br>
+															
 														<div class="row">
 															<div class="col-sm-12">
 														
@@ -60,12 +59,14 @@
 															</div>
 														</div>
 														</div>
-														<br>
+														
 															
 															<button id="button" onclick="showLess()" type="submit" class="btn btn-primary btn-md pull-right sharp">Потврди</button>
 														
+														
 														</form>
-											<br>
+														
+										<br><br>
 											
 							
 									</div>
