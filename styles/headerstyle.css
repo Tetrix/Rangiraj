@@ -1,0 +1,132 @@
+.header 	
+				{
+							position:fixed;
+							background-color:#2D3E52;
+							width: 100%;
+				}
+				
+#txt 	
+				{
+							color: white;
+							font-family:Ubuntu;
+							font-size:15px;
+							font-weight:bold;
+							text-align:justify;
+							
+				}	
+
+#txtlogin	
+				{
+							color: white;
+							font-family:Ubuntu;
+	
+				}	
+
+#txtwarn	
+				{
+							color: white;
+							font-family:Ubuntu;
+	
+				}					
+
+#txt2 	
+				{
+							color: white;
+							font-family:Ubuntu;
+							font-size:20px;
+				}	
+				
+#txt3 	
+				{
+							color: black;
+							font-family:Ubuntu;
+							font-size:30px;
+							text-align:center;
+				}	
+	
+	
+.btn.sharp 
+				{
+							border-radius:0;
+							font-family:Ubuntu;
+							font-size:20px;
+							
+				}
+				
+				
+.nounderline
+				{
+							text-decoration: none !important
+				}
+
+.navigationbar	
+				{
+							font-size:30px;
+							top:130px;
+							left:0;
+							right:0;
+							height:72px;
+							background-color:#344A5F;
+						
+				}
+				
+			
+.navbar_text
+				{
+							vertical-align: middle;
+							color:White;
+							font-style:bold;
+							font-family:Ubuntu;
+							font-size:28px;
+				}
+				
+
+.bg		
+				{
+							background:#344A5F;
+				}
+				
+.rangkopcinja
+				{
+							background:#344A5F;
+				}
+
+#button1 
+				{
+							display: none;
+				}
+
+#l1 
+				{
+							display: none;
+							color:white;
+							font-family:Ubuntu;
+							font-size:20px;
+				}			
+
+.glyphicon 
+				{
+							font-size: 22px;
+				}		
+
+.glyphicon.glyphicon-log-in {
+    font-size: 17px;
+}	
+
+.glyphicon.glyphicon-plus {
+    font-size: 18px;
+}	
+
+.glyphicon.glyphicon-user {
+    font-size: 20px;
+}	
+	
+#jumbologin 
+					{
+							 background: rgba(45, 62, 82, 0.7);
+					}		
+
+.modalbg	
+					{
+							background:white !important;
+					}
