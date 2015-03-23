@@ -68,11 +68,12 @@
 
 .navigationbar	
 				{
-							position:fixed;
+							position:absolute;
 							background-color:#344A5F;
 							top:15%;
 							height:5%;
-							
+							width:100%;
+							left:0%;
 							
 							
 					
