@@ -35,7 +35,7 @@
 	<!--Header-->
 		<div class="row">
 
-				<div class="col-sm-3"> 
+				<div class="col-xs-3"> 
 				
 					<a href="index.php?page=pocetna">	
 							<img src="pictures\Logo.png"  height="100" width="180"  >  
@@ -43,10 +43,10 @@
 					
 				</div>
 				
-				<div class="col-sm-4"> </div>
+				<div class="col-xs-4"> </div>
 				
 				
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 				
 					<br>
 					
@@ -61,7 +61,7 @@
 				</div>
 				
 				
-				<div class="col-sm-2">
+				<div class="col-xs-2">
 						
 						<br>
 						
@@ -81,34 +81,49 @@
 							
 		
 				
-				<div class="col-sm-1"></div>
+				<div class="col-xs-1"></div>
 				
 				
 		</div>
 		
 		<!--NavigationBar-->
-	<div class="row">
-		<div class="col-sm-12">
 					<div class="navigationbar">
 						<nav class="navbar navbar-custom ">
-								
-										<div class="	bg">
-									
-												  <ul  class="nav nav-justified " >
+		
+										<div class="bg">
+																		
+									  <div class="row">
+												  <ul  class="nav nav-justified navpad " >
+
+																<div class="col-xs-2">
 																	<li></li>
-																	<li id="pocetna"><a href="index.php?page=pocetna" >           <p class="navbar_text "><span class="glyphicon glyphicon-home"></span> Почетна        </p></a></li>
-																	<li id="rangiraj"><a href="index.php?page=rangiraj" >      	  <p class="navbar_text"><span class="glyphicon glyphicon-star"></span> Рангирај       </p></a></li>
-																	<li id="rezultati"><a href="index.php?page=rezultati" >     	     	<p class="navbar_text"><span class="glyphicon glyphicon-list"></span> &nbspРезултати      </p></a></li>
-																	<li id="zanas"><a href="index.php?page=zanas ">       				<p class="navbar_text"><span class="glyphicon glyphicon-info-sign"></span> За Нас 			</p></a></li>
+																</div>
+																	
+																<div class=" col-xs-2">
+																	<li><a href="index.php?page=pocetna" >           <p class="navbar_text "><span class="glyphicon glyphicon-home"></span> Почетна        </p></a></li>
+																</div>
+																
+																<div class="col-xs-2">
+																	<li><a href="index.php?page=rangiraj" >      	  <p class="navbar_text"><span class="glyphicon glyphicon-star"></span> Рангирај       </p></a></li>
+																</div>
+																
+																<div class=" col-xs-2">
+																	<li><a href="index.php?page=rezultati" >     	     	<p class="navbar_text"><span class="glyphicon glyphicon-list"></span> &nbspРезултати      </p></a></li>
+																</div>
+																
+																<div class="col-xs-2">
+																	<li><a href="index.php?page=zanas ">       				<p class="navbar_text"><span class="glyphicon glyphicon-info-sign"></span> За Нас 			</p></a></li>
+																</div>
+																
+																<div class="col-xs-2">
 																	<li></li>
+																</div>
+																
 												  </ul>
-							 
+										</div>	
 										</div>
-								
 						</nav>
 					</div>
-		</div>
-		</div>
 
 </div>
 
