@@ -33,13 +33,13 @@
 																	
 															<div class="form-group has-feedback">
 																	<label class="control-label" id="txt">Лозинка:</label>
-																	<input type="text" class="form-control" placeholder="Внесете лозинка" />
+																	<input type="password" class="form-control" placeholder="Внесете лозинка" />
 																	<i class="glyphicon glyphicon-lock form-control-feedback"></i>
 															</div>
 															
 															<div class="form-group has-feedback">
 																	<label class="control-label" id="txt">Потврдете ја лозинката:</label>
-																	<input type="text" class="form-control" placeholder="Потврдете ја лозинката" />
+																	<input type="password" class="form-control" placeholder="Потврдете ја лозинката" />
 																	<i class="glyphicon glyphicon-lock form-control-feedback"></i>
 															</div>
 																	
