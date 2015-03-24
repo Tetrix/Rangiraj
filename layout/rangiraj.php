@@ -17,13 +17,8 @@
 		<link rel="stylesheet" href="stars/rang/jquery/jRating.jquery.css" type="text/css" />
 		<script type="text/javascript" src="stars/rang/jquery/jquery.js"></script>
 <script type="text/javascript" src="stars/rang/jquery/jRating.jquery.js"></script>
+<script type="text/javascript" src="stars/script_for_class_basic.js"></script>
 
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$('.basic').jRating();
-	
-});
-	</script>
 <!--- Zavrsuva skripta za dzvezdite + css -->
 	
 
