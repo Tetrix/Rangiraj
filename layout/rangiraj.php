@@ -1,5 +1,6 @@
 <div  class="main" id="pozadina">
 	<head>
+	
 		<meta charset="utf-8" />
 	
 		<link rel="stylesheet" href="styles\headerstyle.css">	
@@ -12,8 +13,21 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
 		<script type="text/javascript" src="revealcinema\jquery.reveal.js"></script>
 		
-		
-		
+		<!-- Skripta za dzvezdite + css -->
+		<link rel="stylesheet" href="stars/rang/jquery/jRating.jquery.css" type="text/css" />
+		<script type="text/javascript" src="stars/rang/jquery/jquery.js"></script>
+<script type="text/javascript" src="stars/rang/jquery/jRating.jquery.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.basic').jRating();
+	
+});
+	</script>
+<!--- Zavrsuva skripta za dzvezdite + css -->
+	
+
+	
 	</head>
 
 <br><br><br>
@@ -78,18 +92,48 @@
 		
 	</div>
 	
+	
 				<div id="myModal" class="reveal-modal modalbg">
 						<h3 id="txt3">Факултетот може да го рангирате според:</h3>
-						<br>
+						<ul>
+						
+						<!-- Zvezdi fax -->
+					<li>	Кадар:	<div class="basic" data-id="1"></div>
+					</li>
+					<li>Услови:<div class="basic" data-id="2"></div>
+				    </li>
+					<li>Пракса: <div class="basic" data-id="3"></div> 
+			        </li>
+					<!-- Zavrsuva zvezdi fax -->
+					
+					
+					</ul>
+					<br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
 						<button type="button" class="btn btn-sm btn-primary sharp pull-right"><div id="txt"> Потврди</div> </button>
 						<a class="close-reveal-modal">&#215;</a>
 				</div>
+	
 				
+								
+	
 				<div id="myModal2" class="reveal-modal modalbg">
 						<h3 id="txt3">Кампусот може да го рангирате според:</h3>
-						<br>
+						<ul>
+						
+						<!-- Zvezdi kampus -->
+				    <li>	Хигиена:	<div class="basic" data-id="4"></div>
+					</li>
+					<li>Локација:<div class="basic" data-id="5"></div>
+				    </li>
+					<li>Услови: <div class="basic" data-id="6"></div> 
+			        </li>
+					<!-- Zavrsuva zvezdi kampus -->
+					
+					
+                    </ul>
+                    <br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
 						<button type="button" class="btn btn-sm btn-primary sharp pull-right"><div id="txt"> Потврди</div></button>

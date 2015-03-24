@@ -12,7 +12,19 @@
 		<!-- <script type="text/javascript" src="jquery-1.4.4.min.js"></script> -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
 		<script type="text/javascript" src="revealcinema\jquery.reveal.js"></script>
-		
+			<!-- Skripta za dzvezdite + css -->
+		<link rel="stylesheet" href="stars/rang/jquery/jRating.jquery.css" type="text/css" />
+		<script type="text/javascript" src="stars/rang/jquery/jquery.js"></script>
+<script type="text/javascript" src="stars/rang/jquery/jRating.jquery.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.basic').jRating();
+	
+});
+	</script>
+<!--- Zavrsuva skripta za dzvezdite + css -->
+	
 		
 		
 </head>
@@ -40,6 +52,19 @@
 
 	<div id="myModal5" class="reveal-modal modalbg">
 						<h3 id="txt3">Професорот може да го рангирате според:</h3>
+						<ul>
+						
+						<!-- Zvezdi prof -->
+				    <li>	Одговорност:	<div class="basic" data-id="7"></div>
+					</li>
+					<li>Предавања:<div class="basic" data-id="8"></div>
+				    </li>
+					<li>Литература: <div class="basic" data-id="9"></div> 
+			        </li>
+					<!-- Zavrsuva zvezdi prof -->
+					
+					
+                    </ul>
 						<br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
