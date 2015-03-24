@@ -8,7 +8,7 @@
 
 <div class="row">
 	
-		<div class="col-md-12"> 			
+		<div class="col-sm-12"> 			
 		
 		
 					<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="2500" id="bs-carousel">
@@ -71,7 +71,7 @@
 
 
 		</div>
-		<div class="col-md-2"> 			</div>
+		<div class="col-sm-2"> 			</div>
 	</div>
 
 
