@@ -1,0 +1,157 @@
+.main 		
+			{	
+				position:fixed;
+				color:black;
+				top:20%;
+				left:0px;
+				right:0px;
+				bottom:0px;
+				z-index: -1;
+
+			}
+
+.main1 		
+			{	
+				position:fixed;
+				color:black;
+				top:20%;
+				left:0px;
+				right:75%;
+				bottom:0px;
+				 background: rgba(45, 62, 82, 0.8);
+				 z-index: -1;
+				 border-bottom-color:black;
+				 border-bottom:150px;
+			}
+
+.main2
+			{
+				position:fixed;
+				color:black;
+				top:20%;
+				left:26%;
+				right:0;
+				
+				 background: rgba(45, 62, 82, 0.8);
+				 z-index: -1;
+				 padding:15px !Important;
+				 font-family:ubuntu
+			}
+			
+
+
+.rezultaticol{
+		color:white;
+		text-align:center;
+		font-size:120%;
+		vertical-align:middle;
+}
+.rezultaticol2{
+		color:white;
+		text-align:center;
+		font-size:200%;
+		vertical-align:middle;
+}
+		
+#pozadina
+
+			{
+							background-image: url( http://i.imgur.com/dcvtoem.jpg) ;
+						  -webkit-background-size: cover;
+						  -moz-background-size: cover;
+						  -o-background-size: cover;
+							background-size: cover;
+			}
+			
+#pozadinalogin
+
+			{
+							background-image: url(http://i.imgur.com/7vMNpFe.jpg) ;
+						  -webkit-background-size: cover;
+						  -moz-background-size: cover;
+						  -o-background-size: cover;
+						  background-size: cover;
+			}
+#pozadinarezultati
+
+			{
+						position:fixed;
+						top:20%;
+						bottom:0px;
+						left:0px;
+						right:0px;
+							background-image: url(http://i.imgur.com/i8Xt43b.jpg) ;
+						  -webkit-background-size: cover;
+						  -moz-background-size: cover;
+						  -o-background-size: cover;
+						  background-size: cover;
+						  z-index: -1;
+			}
+			
+			
+#pozadinareg
+
+			{
+					background-image: url(http://defwalls.com/wallpapers-n/minimalistic-wind-blurred-_4331-50.jpg);
+						 
+			}			
+			
+
+			
+#jumbo
+				{
+					 background: rgba(52, 74, 95, 0);
+					
+					 text-align:center;
+				}
+				
+#jumbo1
+				{
+					 background: rgba(52, 74, 95, 0.5);
+					color:white;
+					 text-align:justify;
+					 font-family:ubuntu;
+					padding:15px; !important;
+					font-size:80%;
+					 
+				}
+				
+#jumboproff
+				{
+					 background: rgba(52, 74, 95, 0.5);
+					color:white;
+					 text-align:justify;
+					 font-family:ubuntu;
+				
+					font-size:120%;
+					 
+				}
+#textjumbo 
+				{
+					text-align:center;
+					color:white;
+					font-family:ubuntu
+				}
+				
+#textjumbo2
+				{
+					text-align:center;
+			
+					color:white;
+					font-family:ubuntu
+				}
+				
+#textjumbo3
+				{
+					text-align:center;
+
+					color:white;
+					font-family:ubuntu
+				}
+
+.revealpaddig
+			{
+				padding:15px !Important;
+			}
+
+			
