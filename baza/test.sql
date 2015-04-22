@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2015 at 11:46 PM
+-- Generation Time: Apr 22, 2015 at 09:21 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `proba`
+-- Database: `test`
 --
 
 -- --------------------------------------------------------
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `fakulteti` (
 --
 
 INSERT INTO `fakulteti` (`id_fakultet`, `ime_fakultet`, `rejting_na_fakultet`) VALUES
-(8, 'Факултет за Информатика', 470),
+(8, 'Факултет за Информатика', 0),
 (9, 'Електротехнички факултет', 0),
 (10, 'Факултет за медицински науки', 0),
 (11, 'Економски факултет', 0),
@@ -121,59 +121,32 @@ CREATE TABLE IF NOT EXISTS `fakultet_rang` (
 --
 
 INSERT INTO `fakultet_rang` (`id_fak_rang`, `id_fakultet`, `id_korisnik`, `praksa`, `kadar`, `uslovi`) VALUES
-(50, 8, 1, 5, 4, 5),
-(51, 8, 1, 3, 4, 5),
-(52, 8, 1, 2, 4, 5),
-(53, 8, 1, 4, 4, 5),
-(54, 8, 1, 3, 4, 5),
-(55, 8, 1, 1, 4, 5),
-(56, 8, 1, 3, 4, 5),
-(57, 8, 1, 4, 4, 5),
-(58, 8, 1, 2, 4, 5),
-(59, 8, 1, 5, 4, 5),
-(60, 8, 1, 2, 4, 5),
-(61, 8, 1, 5, 4, 5),
-(62, 8, 1, 4, 4, 5),
-(63, 8, 1, 3, 4, 5),
-(64, 8, 1, 4, 4, 5),
-(65, 8, 1, 3, 4, 5),
-(66, 8, 1, 1, 4, 5),
-(67, 8, 1, 2, 4, 5),
-(68, 8, 1, 4, 4, 5),
-(69, 8, 1, 1, 4, 5),
-(70, 8, 1, 4, 4, 5),
-(71, 8, 1, 2, 4, 5),
-(72, 8, 1, 1, 4, 5),
-(73, 8, 1, 4, 4, 5),
-(74, 8, 1, 5, 4, 5),
-(75, 8, 1, 5, 4, 5);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `fakultet_univerzitet`
---
-
-CREATE TABLE IF NOT EXISTS `fakultet_univerzitet` (
-  `id_fak_uni` int(11) NOT NULL AUTO_INCREMENT,
-  `id_fakutet` int(11) NOT NULL,
-  `id_univerzitet` int(11) NOT NULL,
-  PRIMARY KEY (`id_fak_uni`),
-  UNIQUE KEY `id_fakutet` (`id_fakutet`),
-  KEY `id_univerzitet` (`id_univerzitet`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
-
---
--- Dumping data for table `fakultet_univerzitet`
---
-
-INSERT INTO `fakultet_univerzitet` (`id_fak_uni`, `id_fakutet`, `id_univerzitet`) VALUES
-(11, 8, 4),
-(12, 9, 4),
-(13, 10, 4),
-(14, 11, 4),
-(15, 12, 4),
-(16, 13, 4);
+(50, 8, 1, 0, 0, 0),
+(51, 8, 1, 0, 0, 0),
+(52, 8, 1, 0, 0, 0),
+(53, 8, 1, 0, 0, 0),
+(54, 8, 1, 0, 0, 0),
+(55, 8, 1, 0, 0, 0),
+(56, 8, 1, 0, 0, 0),
+(57, 8, 1, 0, 0, 0),
+(58, 8, 1, 0, 0, 0),
+(59, 8, 1, 0, 0, 0),
+(60, 8, 1, 0, 0, 0),
+(61, 8, 1, 0, 0, 0),
+(62, 8, 1, 0, 0, 0),
+(63, 8, 1, 0, 0, 0),
+(64, 8, 1, 0, 0, 0),
+(65, 8, 1, 0, 0, 0),
+(66, 8, 1, 0, 0, 0),
+(67, 8, 1, 0, 0, 0),
+(68, 8, 1, 0, 0, 0),
+(69, 8, 1, 0, 0, 0),
+(70, 8, 1, 0, 0, 0),
+(71, 8, 1, 0, 0, 0),
+(72, 8, 1, 0, 0, 0),
+(73, 8, 1, 0, 0, 0),
+(74, 8, 1, 0, 0, 0),
+(75, 8, 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -193,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `kampus` (
 --
 
 INSERT INTO `kampus` (`id_kampus`, `ime_kampus`, `rejting_na_kampus`) VALUES
-(4, 'Кампус 2', 457),
+(4, 'Кампус 2', 0),
 (5, 'Кампус 3', 0),
 (6, 'Кампус 4', 0);
 
@@ -246,31 +219,7 @@ CREATE TABLE IF NOT EXISTS `kampus_rang` (
 --
 
 INSERT INTO `kampus_rang` (`id_kam_rang`, `id_kampus`, `id_korisnik`, `higiena`, `lokacija`, `uslovi`) VALUES
-(2, 4, 1, 5, 2, 3);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `kampus_univerzitet`
---
-
-CREATE TABLE IF NOT EXISTS `kampus_univerzitet` (
-  `id_kam_uni` int(11) NOT NULL AUTO_INCREMENT,
-  `id_kampus` int(11) NOT NULL,
-  `id_univerzitet` int(11) NOT NULL,
-  PRIMARY KEY (`id_kam_uni`),
-  UNIQUE KEY `id_kampus` (`id_kampus`),
-  KEY `id_univerzitet` (`id_univerzitet`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
-
---
--- Dumping data for table `kampus_univerzitet`
---
-
-INSERT INTO `kampus_univerzitet` (`id_kam_uni`, `id_kampus`, `id_univerzitet`) VALUES
-(13, 4, 4),
-(14, 5, 4),
-(15, 6, 4);
+(2, 4, 1, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -320,32 +269,6 @@ INSERT INTO `profesori` (`id_profesor`, `ime_prezime_prof`, `rejting_na_profesor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `profesor_univerzitet`
---
-
-CREATE TABLE IF NOT EXISTS `profesor_univerzitet` (
-  `id_prof_kam` int(11) NOT NULL AUTO_INCREMENT,
-  `id_profesor` int(11) NOT NULL,
-  `id_univerzitet` int(11) NOT NULL,
-  PRIMARY KEY (`id_prof_kam`),
-  KEY `id_profesor` (`id_profesor`),
-  KEY `id_univerzitet` (`id_univerzitet`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
-
---
--- Dumping data for table `profesor_univerzitet`
---
-
-INSERT INTO `profesor_univerzitet` (`id_prof_kam`, `id_profesor`, `id_univerzitet`) VALUES
-(6, 39, 4),
-(7, 40, 4),
-(8, 41, 4),
-(9, 42, 4),
-(10, 43, 4);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `prof_rang`
 --
 
@@ -368,42 +291,6 @@ CREATE TABLE IF NOT EXISTS `prof_rang` (
 
 INSERT INTO `prof_rang` (`id_prof_rang`, `id_prof`, `id_korisnik`, `odgovornost`, `predavanja`, `literatura`, `ocena`) VALUES
 (2, 39, 1, 5, 0, 0, 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `univerzitet`
---
-
-CREATE TABLE IF NOT EXISTS `univerzitet` (
-  `id_univerzitet` int(11) NOT NULL AUTO_INCREMENT,
-  `ime_univerzitet` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `rejting_na_univerzitet` float NOT NULL,
-  PRIMARY KEY (`id_univerzitet`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
-
---
--- Dumping data for table `univerzitet`
---
-
-INSERT INTO `univerzitet` (`id_univerzitet`, `ime_univerzitet`, `rejting_na_univerzitet`) VALUES
-(4, 'Универзитет „Гоце Делчев“', 0),
-(5, 'Универзитет „Кирил и Методиј“', 0),
-(6, 'ФОН Универзитет', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `univerzitet_rang`
---
-
-CREATE TABLE IF NOT EXISTS `univerzitet_rang` (
-  `id_uni_rang` int(11) NOT NULL AUTO_INCREMENT,
-  `id_univerzitet` tinyint(4) NOT NULL,
-  `rejting_univerzitet` decimal(1,1) NOT NULL,
-  PRIMARY KEY (`id_uni_rang`),
-  KEY `id_univerzitet` (`id_univerzitet`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Constraints for dumped tables
@@ -431,13 +318,6 @@ ALTER TABLE `fakultet_rang`
   ADD CONSTRAINT `fakultet_rang_ibfk_3` FOREIGN KEY (`id_fakultet`) REFERENCES `fakulteti` (`id_fakultet`);
 
 --
--- Constraints for table `fakultet_univerzitet`
---
-ALTER TABLE `fakultet_univerzitet`
-  ADD CONSTRAINT `fakultet_univerzitet_ibfk_2` FOREIGN KEY (`id_univerzitet`) REFERENCES `univerzitet` (`id_univerzitet`),
-  ADD CONSTRAINT `fakultet_univerzitet_ibfk_3` FOREIGN KEY (`id_fakutet`) REFERENCES `fakulteti` (`id_fakultet`);
-
---
 -- Constraints for table `kampus_profesor`
 --
 ALTER TABLE `kampus_profesor`
@@ -450,20 +330,6 @@ ALTER TABLE `kampus_profesor`
 ALTER TABLE `kampus_rang`
   ADD CONSTRAINT `kampus_rang_ibfk_1` FOREIGN KEY (`id_kampus`) REFERENCES `kampus` (`id_kampus`),
   ADD CONSTRAINT `kampus_rang_ibfk_2` FOREIGN KEY (`id_korisnik`) REFERENCES `korisnici` (`id_korisnik`);
-
---
--- Constraints for table `kampus_univerzitet`
---
-ALTER TABLE `kampus_univerzitet`
-  ADD CONSTRAINT `kampus_univerzitet_ibfk_2` FOREIGN KEY (`id_univerzitet`) REFERENCES `univerzitet` (`id_univerzitet`),
-  ADD CONSTRAINT `kampus_univerzitet_ibfk_3` FOREIGN KEY (`id_kampus`) REFERENCES `kampus` (`id_kampus`);
-
---
--- Constraints for table `profesor_univerzitet`
---
-ALTER TABLE `profesor_univerzitet`
-  ADD CONSTRAINT `profesor_univerzitet_ibfk_2` FOREIGN KEY (`id_univerzitet`) REFERENCES `univerzitet` (`id_univerzitet`),
-  ADD CONSTRAINT `profesor_univerzitet_ibfk_3` FOREIGN KEY (`id_profesor`) REFERENCES `profesori` (`id_profesor`);
 
 --
 -- Constraints for table `prof_rang`
