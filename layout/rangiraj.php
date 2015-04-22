@@ -13,18 +13,6 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
 		<script type="text/javascript" src="revealcinema\jquery.reveal.js"></script>
 		
-		<!-- Skripta za dzvezdite + css -->
-		<link rel="stylesheet" href="stars/rang/jquery/jRating.jquery.css" type="text/css" />
-		<script type="text/javascript" src="stars/rang/jquery/jquery.js"></script>
-<script type="text/javascript" src="stars/rang/jquery/jRating.jquery.js"></script>
-
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$('.basic').jRating();
-	
-});
-	</script>
-<!--- Zavrsuva skripta za dzvezdite + css -->
 	
 
 	
@@ -98,16 +86,39 @@
 						<ul>
 						
 						<!-- Zvezdi fax -->
-					<li>	Кадар:	<div class="basic" data-id="1"></div>
-					</li>
-					<li>Услови:<div class="basic" data-id="2"></div>
-				    </li>
-					<li>Пракса: <div class="basic" data-id="3"></div> 
+					<form action="star/test.php" method="post">
+				    <li>	Пракса:	
+					<br>
+    <input class="star" type="radio" name="test1" value="1"/>
+    <input class="star" type="radio" name="test1" value="2"/>
+    <input class="star" type="radio" name="test1" value="3"/>
+    <input class="star" type="radio" name="test1" value="4"/>
+    <input class="star" type="radio" name="test1" value="5"/>
+	
+					</li><br>
+					<li>Кадар:
+					<br>
+    <input class="star" type="radio" name="test2" value="1"/>
+    <input class="star" type="radio" name="test2" value="2"/>
+    <input class="star" type="radio" name="test2" value="3"/>
+    <input class="star" type="radio" name="test2" value="4"/>
+    <input class="star" type="radio" name="test2" value="5"/>
+	
+				    </li><br>
+					<li>Услови: 
+					<br>
+    <input class="star" type="radio" name="test3" value="1"/>
+    <input class="star" type="radio" name="test3" value="2"/>
+    <input class="star" type="radio" name="test3" value="3"/>
+    <input class="star" type="radio" name="test3" value="4"/>
+    <input class="star" type="radio" name="test3" value="5"/>
+	<input type="submit" value="Potvrdi" />
+	
 			        </li>
-					<!-- Zavrsuva zvezdi fax -->
+					<!-- Zavrsuva zvezdi kampus -->
 					
-					
-					</ul>
+					</form>
+                    </ul>
 					<br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
@@ -123,15 +134,38 @@
 						<ul>
 						
 						<!-- Zvezdi kampus -->
-				    <li>	Хигиена:	<div class="basic" data-id="4"></div>
-					</li>
-					<li>Локација:<div class="basic" data-id="5"></div>
-				    </li>
-					<li>Услови: <div class="basic" data-id="6"></div> 
+						<form action="star/test.php" method="post">
+				    <li>	Хигиена:	
+					<br>
+    <input class="star" type="radio" name="test1" value="1"/>
+    <input class="star" type="radio" name="test1" value="2"/>
+    <input class="star" type="radio" name="test1" value="3"/>
+    <input class="star" type="radio" name="test1" value="4"/>
+    <input class="star" type="radio" name="test1" value="5"/>
+	
+					</li><br>
+					<li>Локација:
+					<br>
+    <input class="star" type="radio" name="test2" value="1"/>
+    <input class="star" type="radio" name="test2" value="2"/>
+    <input class="star" type="radio" name="test2" value="3"/>
+    <input class="star" type="radio" name="test2" value="4"/>
+    <input class="star" type="radio" name="test2" value="5"/>
+	
+				    </li><br>
+					<li>Услови: 
+					<br>
+    <input class="star" type="radio" name="test3" value="1"/>
+    <input class="star" type="radio" name="test3" value="2"/>
+    <input class="star" type="radio" name="test3" value="3"/>
+    <input class="star" type="radio" name="test3" value="4"/>
+    <input class="star" type="radio" name="test3" value="5"/>
+	<input type="submit" value="Potvrdi" />
+	
 			        </li>
 					<!-- Zavrsuva zvezdi kampus -->
 					
-					
+					</form>
                     </ul>
                     <br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>

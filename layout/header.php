@@ -21,6 +21,11 @@
 					<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 					
+					<!-- Skripti za zvezdi -->
+					 <script src='star/jquery.js' type="text/javascript"></script>
+	<script src='star/jquery.rating.js' type="text/javascript" language="javascript"></script>
+    <link href='star/jquery.rating.css' type="text/css" rel="stylesheet"/>
+	<!-- Zavrsuva Skripti za zvezdi -->
 								<style>
 									a.ex3:hover{
 										

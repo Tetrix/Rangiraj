@@ -1,5 +1,5 @@
 <?php
-
+$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
 $aResponse['error'] = false;
 $aResponse['message'] = '';
 
@@ -11,6 +11,7 @@ $aResponse['message'] = '';
 	
 if(isset($_POST['action']))
 {
+
 	if(htmlentities($_POST['action'], ENT_QUOTES, 'UTF-8') == 'rating')
 	{
 		/*
@@ -22,32 +23,59 @@ if(isset($_POST['action']))
 		
 		if($id==1)
 		{
-		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
-		$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,praksa) VALUES ('8','1',$rate)  ";
+		$praksa="SELECT praksa FROM `fakultet_rang` WHERE id_fakultet=9 AND id_korisnik=1";
+		if($praksa==NULL)
+		{
+		$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,praksa) VALUES ('9','1',$rate)  ";
 		mysqli_query($rangiraj,$sql);
-		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
-	    $sqll=" UPDATE fakulteti SET rejting_na_fakultet=rejting_na_fakultet+$rate WHERE id_fakultet=8";
-		mysqli_query($rangiraj,$sqll);
+	    }
+		else
+		{
+		
+		$sql="UPDATE fakultet_rang SET praksa=$rate " ;
+	   /*$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,kadar) VALUES ('1','1',$rate)  ";*/
+		mysqli_query($rangiraj,$sql);
+		}
 		}
 		if($id==2)
 		{
-		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
-		$sql="UPDATE fakultet_rang SET kadar=$rate";
+		$kadar="SELECT kadar FROM `fakultet_rang` WHERE id_fakultet=9 AND id_korisnik=1";
+		if($kadar==NULL)
+		{
+		$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,kadar) VALUES ('9','1',$rate)  ";
+		mysqli_query($rangiraj,$sql);
+		}
+		else 
+		{
+		$sql="UPDATE fakultet_rang SET kadar=$rate " ;
 	   /*$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,kadar) VALUES ('1','1',$rate)  ";*/
 		mysqli_query($rangiraj,$sql);
-		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
-	    $sqll=" UPDATE fakulteti SET rejting_na_fakultet=rejting_na_fakultet+$rate WHERE id_fakultet=8";
-		mysqli_query($rangiraj,$sqll);
+		}
 		}
 		if($id==3)
 		{
-		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
-		$sql="UPDATE fakultet_rang SET uslovi=$rate";
-     	mysqli_query($rangiraj,$sql);
-		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
-	    $sqll=" UPDATE fakulteti SET rejting_na_fakultet=rejting_na_fakultet+$rate WHERE id_fakultet=8";
-		mysqli_query($rangiraj,$sqll);
+		$uslovi="SELECT uslovi FROM `fakultet_rang` WHERE id_fakultet=9 AND id_korisnik=1";
+		if($uslovi==NULL)
+		{
+		$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,uslovi) VALUES ('9','1',$rate)  ";
+		mysqli_query($rangiraj,$sql);
 		}
+		else
+		{
+		$sql="UPDATE fakultet_rang SET uslovi=$rate " ;
+	   /*$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,kadar) VALUES ('1','1',$rate)  ";*/
+		mysqli_query($rangiraj,$sql);
+		}
+		}
+		
+		
+		/*
+		if($count==3)
+		{
+		$count=0;
+		}
+		*/
+		/*
 		if($id==4)
 		{
 		$db=mysqli_connect('127.0.0.1','root','','baza');
@@ -75,6 +103,7 @@ if(isset($_POST['action']))
 		$sqll=" UPDATE kampus SET rejting_na_kampus=rejting_na_kampus+$rate WHERE id_kampus=4";
 		mysqli_query($db,$sqll);
 		}
+		*/
 		/*
 		if($id==7)
 		{

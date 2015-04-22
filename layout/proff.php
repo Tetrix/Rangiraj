@@ -13,16 +13,9 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
 		<script type="text/javascript" src="revealcinema\jquery.reveal.js"></script>
 			<!-- Skripta za dzvezdite + css -->
-		<link rel="stylesheet" href="stars/rang/jquery/jRating.jquery.css" type="text/css" />
-		<script type="text/javascript" src="stars/rang/jquery/jquery.js"></script>
-<script type="text/javascript" src="stars/rang/jquery/jRating.jquery.js"></script>
-
-		<script type="text/javascript">
-		$(document).ready(function(){
-			$('.basic').jRating();
-	
-});
-	</script>
+		 <script src='star/jquery.js' type="text/javascript"></script>
+	<script src='star/jquery.rating.js' type="text/javascript" language="javascript"></script>
+    <link href='star/jquery.rating.css' type="text/css" rel="stylesheet"/>
 <!--- Zavrsuva skripta za dzvezdite + css -->
 	
 		
@@ -55,15 +48,38 @@
 						<ul>
 						
 						<!-- Zvezdi prof -->
-				    <li>	Одговорност:	<div class="basic" data-id="7"></div>
-					</li>
-					<li>Предавања:<div class="basic" data-id="8"></div>
-				    </li>
-					<li>Литература: <div class="basic" data-id="9"></div> 
+				    <form action="star/test.php" method="post">
+				    <li>	Предавања:	
+					<br>
+    <input class="star" type="radio" name="test1" value="1"/>
+    <input class="star" type="radio" name="test1" value="2"/>
+    <input class="star" type="radio" name="test1" value="3"/>
+    <input class="star" type="radio" name="test1" value="4"/>
+    <input class="star" type="radio" name="test1" value="5"/>
+	
+					</li><br>
+					<li>Литература:
+					<br>
+    <input class="star" type="radio" name="test2" value="1"/>
+    <input class="star" type="radio" name="test2" value="2"/>
+    <input class="star" type="radio" name="test2" value="3"/>
+    <input class="star" type="radio" name="test2" value="4"/>
+    <input class="star" type="radio" name="test2" value="5"/>
+	
+				    </li><br>
+					<li>Оцена: 
+					<br>
+    <input class="star" type="radio" name="test3" value="1"/>
+    <input class="star" type="radio" name="test3" value="2"/>
+    <input class="star" type="radio" name="test3" value="3"/>
+    <input class="star" type="radio" name="test3" value="4"/>
+    <input class="star" type="radio" name="test3" value="5"/>
+	<input type="submit" value="Potvrdi" />
+	
 			        </li>
-					<!-- Zavrsuva zvezdi prof -->
+					<!-- Zavrsuva zvezdi kampus -->
 					
-					
+					</form>
                     </ul>
 						<br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
