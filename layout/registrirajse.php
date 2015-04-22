@@ -44,20 +44,7 @@
 															</div>
 																	
 															
-														<div class="row">
-															<div class="col-sm-12">
 														
-																<div class="form-group">
-																 
-																		  <select class="form-control" id="sel1">
-																					<option selected disabled>Одберете го универзитетот на кој што студирате</option>
-																					<option>Факултет Гоце Делчев</option>
-																					<option>Факултет Кабљет</option>
-																		  </select>
-																  
-																 </div>
-															</div>
-														</div>
 														</div>
 														
 															
