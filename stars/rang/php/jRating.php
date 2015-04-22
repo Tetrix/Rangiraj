@@ -22,38 +22,38 @@ if(isset($_POST['action']))
 		
 		if($id==1)
 		{
-		$rangiraj=mysqli_connect('127.0.0.1','root','','proba');
+		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
 		$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,praksa) VALUES ('8','1',$rate)  ";
 		mysqli_query($rangiraj,$sql);
-		$rangiraj=mysqli_connect('127.0.0.1','root','','proba');
+		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
 	    $sqll=" UPDATE fakulteti SET rejting_na_fakultet=rejting_na_fakultet+$rate WHERE id_fakultet=8";
 		mysqli_query($rangiraj,$sqll);
 		}
 		if($id==2)
 		{
-		$rangiraj=mysqli_connect('127.0.0.1','root','','proba');
+		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
 		$sql="UPDATE fakultet_rang SET kadar=$rate";
 	   /*$sql="INSERT INTO fakultet_rang (id_fakultet,id_korisnik,kadar) VALUES ('1','1',$rate)  ";*/
 		mysqli_query($rangiraj,$sql);
-		$rangiraj=mysqli_connect('127.0.0.1','root','','proba');
+		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
 	    $sqll=" UPDATE fakulteti SET rejting_na_fakultet=rejting_na_fakultet+$rate WHERE id_fakultet=8";
 		mysqli_query($rangiraj,$sqll);
 		}
 		if($id==3)
 		{
-		$rangiraj=mysqli_connect('127.0.0.1','root','','proba');
+		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
 		$sql="UPDATE fakultet_rang SET uslovi=$rate";
      	mysqli_query($rangiraj,$sql);
-		$rangiraj=mysqli_connect('127.0.0.1','root','','proba');
+		$rangiraj=mysqli_connect('127.0.0.1','root','','baza');
 	    $sqll=" UPDATE fakulteti SET rejting_na_fakultet=rejting_na_fakultet+$rate WHERE id_fakultet=8";
 		mysqli_query($rangiraj,$sqll);
 		}
 		if($id==4)
 		{
-		$db=mysqli_connect('127.0.0.1','root','','proba');
+		$db=mysqli_connect('127.0.0.1','root','','baza');
 		$sql=" UPDATE kampus_rang SET higiena=$rate WHERE id_kampus=4";
 		mysqli_query($db,$sql);
-		$db=mysqli_connect('127.0.0.1','root','','proba');
+		$db=mysqli_connect('127.0.0.1','root','','baza');
 		$sqll=" UPDATE kampus SET rejting_na_kampus=rejting_na_kampus+$rate WHERE id_kampus=4";
 		mysqli_query($db,$sqll);
 		}
