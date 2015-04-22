@@ -27,19 +27,19 @@
 																			
 															<div class="form-group has-feedback">
 																	<label class="control-label" id="txt">Мејл:</label>
-																	<input type="text" class="form-control" name="username" placeholder="Регистрирајте се со студентскиот мејл" />
+																	<input type="text" class="form-control" name="reg_username" placeholder="Регистрирајте се со студентскиот мејл" />
 																	<i class="glyphicon glyphicon-user form-control-feedback"></i>
 															</div>
 																	
 															<div class="form-group has-feedback">
 																	<label class="control-label" id="txt">Лозинка:</label>
-																	<input type="password" name="password" class="form-control" placeholder="Внесете лозинка" />
+																	<input type="password" name="reg_password" class="form-control" placeholder="Внесете лозинка" />
 																	<i class="glyphicon glyphicon-lock form-control-feedback"></i>
 															</div>
 															
 															<div class="form-group has-feedback">
 																	<label class="control-label" id="txt">Потврдете ја лозинката:</label>
-																	<input type="password" name="password_confirm" class="form-control" placeholder="Потврдете ја лозинката" />
+																	<input type="password" name="reg_password_confirm" class="form-control" placeholder="Потврдете ја лозинката" />
 																	<i class="glyphicon glyphicon-lock form-control-feedback"></i>
 															</div>
 																	
