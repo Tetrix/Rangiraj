@@ -95,7 +95,9 @@
 				// Accept required setting from class property (class='required')
 				if(input.hasClass('required')) control.required = true;
 				
+				
 				// Create 'cancel' button
+				
 				rater.append(
 					control.cancel = $('<div class="rating-cancel"><a title="' + control.cancel + '">' + control.cancelValue + '</a></div>')
 					.on('mouseover',function(){
@@ -235,10 +237,10 @@
 			// do not execute when control is in read-only mode
 			if(control.readOnly) return;
 			// Reset all stars and highlight them up to this element
-			this.rating('drain');
+		this.rating('drain');
 			this.prevAll().addBack().filter('.rater-'+ control.serial).addClass('star-rating-hover');
 		},// $.fn.rating.fill
-		
+	
 		drain: function() { // drain all the stars.
 			var control = this.data('rating'); if(!control) return this;
 			// do not execute when control is in read-only mode
@@ -254,9 +256,9 @@
 			// Set control value
 			var current = $( control.current );//? control.current.data('rating.input') : null );
 			var starson = current.length ? current.prevAll().addBack().filter('.rater-'+ control.serial) : null;
-			if(starson)	starson.addClass('star-rating-on');
+			if(starson)	starson.addClass('star-rating-on'); 
 			// Show/hide 'cancel' button
-			control.cancel[control.readOnly || control.required?'hide':'show']();
+			control.cancel[control.readOnly || control.required?'hide':'hide']();
 			// Add/remove read-only classes to remove hand pointer
 			this.siblings()[control.readOnly?'addClass':'removeClass']('star-rating-readonly');
 		},// $.fn.rating.draw
