@@ -215,30 +215,30 @@ var button1_val= document.getElementById("button1_val");
 function check() {
  if((one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте ги сите параметри");
+    alert("Рангирајте гo полет Пракса");
    }
 if((six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте ги сите параметри");
+   alert("Рангирајте го полето Кадар");
    }
 if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте ги сите параметри");
+    alert("Рангирајте го полето Услови");
    }
    }
 
 function check2(){
  if((one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false))
    {
-    button4_val.onclick=alert("Рангирајте ги сите параметри");
+    button3_val.onclick=alert("Рангирајте го полето хигиена");
    }
  if((six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false))
    {
-    button4_val.onclick=alert("Рангирајте ги сите параметри");
+    button3_val.onclick=alert("Рангирајте го полето локација");
    }
  if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false))
    {
-    button4_val.onclick=alert("Рангирајте ги сите параметри");
+    button3_val.onclick=alert("Рангирајте го полето услови");
    }
 }
 </script>
