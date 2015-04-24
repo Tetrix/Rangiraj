@@ -87,7 +87,7 @@
 						
 						<!-- Zvezdi fax -->
 					
-					<form action="" id="form1_validation"method="post" >
+					<form action="star/star_validation.php" id="form1_validation"method="post" >
 				    <li>	Пракса:	
 					<br>
 					
@@ -230,15 +230,15 @@ if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked =
 function check2(){
  if((one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте ги сите параметри");
+    button4_val.onclick=alert("Рангирајте ги сите параметри");
    }
  if((six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте ги сите параметри");
+    button4_val.onclick=alert("Рангирајте ги сите параметри");
    }
  if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте ги сите параметри");
+    button4_val.onclick=alert("Рангирајте ги сите параметри");
    }
 }
 </script>
