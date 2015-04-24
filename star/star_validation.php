@@ -1,6 +1,6 @@
 <?php
-include ("../includes/funkcii.php");
-$location="../index.php?page=rangiraj";
-redirectTo($location);
-
+include ("insert_indb.php");
+/*
+include ("rangiraj_redirect.php"); 
+*/
 ?>

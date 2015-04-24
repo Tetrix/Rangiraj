@@ -143,29 +143,29 @@
 						<form action="star/star_validation.php" id="form2_validation" method="post">
 				    <li>	Хигиена:	
 					<br>
-     <input class="star" type="radio" name="test1" id="16" value="1"/>
-    <input class="star" type="radio" name="test1" id="17"value="2"/>
-    <input class="star" type="radio" name="test1" id="18"value="3"/>
-    <input class="star" type="radio" name="test1" id="19"value="4"/>
-    <input class="star" type="radio" name="test1" id="20"value="5"/>
+     <input class="star" type="radio" name="test4" id="16" value="1"/>
+    <input class="star" type="radio" name="test4" id="17"value="2"/>
+    <input class="star" type="radio" name="test4" id="18"value="3"/>
+    <input class="star" type="radio" name="test4" id="19"value="4"/>
+    <input class="star" type="radio" name="test4" id="20"value="5"/>
 	
 					</li><br>
 					<li>Локација:
 					<br>
-     <input class="star" type="radio" name="test2" id="21"value="1"/>
-    <input class="star" type="radio" name="test2" id="22"value="2"/>
-    <input class="star" type="radio" name="test2" id="23"value="3"/>
-    <input class="star" type="radio" name="test2" id="24"value="4"/>
-    <input class="star" type="radio" name="test2" id="25"value="5"/>
+     <input class="star" type="radio" name="test5" id="21"value="1"/>
+    <input class="star" type="radio" name="test5" id="22"value="2"/>
+    <input class="star" type="radio" name="test5" id="23"value="3"/>
+    <input class="star" type="radio" name="test5" id="24"value="4"/>
+    <input class="star" type="radio" name="test5" id="25"value="5"/>
 	
 				    </li><br>
 					<li>Услови: 
 					<br>
-    <input class="star" type="radio" name="test3" id="26" value="1"/>
-    <input class="star" type="radio" name="test3" id="27" value="2"/>
-    <input class="star" type="radio" name="test3" id="28" value="3"/>
-    <input class="star" type="radio" name="test3" id="29" value="4"/>
-    <input class="star" type="radio" name="test3" id="30" value="5"/>
+    <input class="star" type="radio" name="test6" id="26" value="1"/>
+    <input class="star" type="radio" name="test6" id="27" value="2"/>
+    <input class="star" type="radio" name="test6" id="28" value="3"/>
+    <input class="star" type="radio" name="test6" id="29" value="4"/>
+    <input class="star" type="radio" name="test6" id="30" value="5"/>
 	
 	
 			        </li>
@@ -260,7 +260,7 @@ function check2(){
 
 
 
-
+<!-- FALE EVENT KOA KE SE IZGLASA SE DA VIKA " VI BLAGODARIME ZA GLASANJETO " -->
 <!-- ZAVRSUVA SKRIPTA ZA VALIDACIJA ZA DZVEZDITE KAJ FAKULTET I KAMPUS -->
 
 				
