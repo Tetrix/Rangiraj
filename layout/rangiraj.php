@@ -12,7 +12,7 @@
 		<!-- <script type="text/javascript" src="jquery-1.4.4.min.js"></script> -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
 		<script type="text/javascript" src="revealcinema\jquery.reveal.js"></script>
-		
+		<script src="star/star_validation.js" type="text/javascript"></script>
 	
 
 	
@@ -86,7 +86,7 @@
 						<ul>
 						
 						<!-- Zvezdi fax -->
-					<form action="star/test.php" method="post">
+					<form action="star/star_validation.php" id="form1_validation"method="post">
 				    <li>	Пракса:	
 					<br>
     <input class="star" type="radio" name="test1" value="1"/>
@@ -112,18 +112,20 @@
     <input class="star" type="radio" name="test3" value="3"/>
     <input class="star" type="radio" name="test3" value="4"/>
     <input class="star" type="radio" name="test3" value="5"/>
-	<input type="submit" value="Potvrdi" />
+	
 	
 			        </li>
-					<!-- Zavrsuva zvezdi kampus -->
 					
-					</form>
+					
+					
                     </ul>
 					<br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
-						<button type="button" class="btn btn-sm btn-primary sharp"><div id="txt"> Потврди</div> </button>
+						<button type="submit" class="btn btn-sm btn-primary sharp" id="button1_val" onclick="form_star_validation()><div id="txt"> Потврди</div> </button>
 						<a class="close-reveal-modal">&#215;</a>
+						</form>
+						<!-- Zavrsuva zvezdi kampus -->
 				</div>
 	
 				
@@ -134,7 +136,7 @@
 						<ul>
 						
 						<!-- Zvezdi kampus -->
-						<form action="star/test.php" method="post">
+						<form action="star/star_validation.php" id="form2_validation" method="post">
 				    <li>	Хигиена:	
 					<br>
     <input class="star" type="radio" name="test1" value="1"/>
@@ -160,18 +162,20 @@
     <input class="star" type="radio" name="test3" value="3"/>
     <input class="star" type="radio" name="test3" value="4"/>
     <input class="star" type="radio" name="test3" value="5"/>
-	<input type="submit" value="Potvrdi" />
+	
 	
 			        </li>
-					<!-- Zavrsuva zvezdi kampus -->
 					
-					</form>
+					
+					
                     </ul>
                     <br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
-						<button type="button" class="btn btn-sm btn-primary sharp"><div id="txt"> Потврди</div></button>
+						<button type="submit" class="btn btn-sm btn-primary sharp" id="button2_val" onclick="form_star_validation()><div id="txt"> Потврди</div></button>
 						<a class="close-reveal-modal">&#215;</a>
+						</form>
+						<!-- Zavrsuva zvezdi kampus -->
 				</div>
 	
 				<script>
