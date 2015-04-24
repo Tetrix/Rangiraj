@@ -15,7 +15,7 @@
 			<!-- Skripta za dzvezdite + css -->
 		 <script src='star/jquery.js' type="text/javascript"></script>
 	<script src='star/jquery.rating.js' type="text/javascript" language="javascript"></script>
-    <link href='star/jquery.rating.css' type="text/css" rel="stylesheet"/>
+   
 	
 <!--- Zavrsuva skripta za dzvezdite + css -->
 	
@@ -52,33 +52,33 @@
 						<!-- Zvezdi prof -->
 				    <form action="star/star_validation.php" id="form3_validation" method="post">
 					
-				    <li>	Предавања:	
-					<br>
-     <input class="star" type="radio" name="test1" id="1" value="1"/>
-    <input class="star" type="radio" name="test1" id="2"value="2"/>
-    <input class="star" type="radio" name="test1" id="3"value="3"/>
-    <input class="star" type="radio" name="test1" id="4"value="4"/>
-    <input class="star" type="radio" name="test1" id="5"value="5"/>
+				    <li>	Одговорност:
+					<br> 
+     <input class="star" type="radio" name="test7" id="1" value="1"/>
+    <input class="star" type="radio" name="test7" id="2"value="2"/>
+    <input class="star" type="radio" name="test7" id="3"value="3"/>
+    <input class="star" type="radio" name="test7" id="4"value="4"/>
+    <input class="star" type="radio" name="test7" id="5"value="5"/>
 	
 					</li><br>
 					
-					<li>Литература:
+					<li> Предавања:	
 					<br>
-    <input class="star" type="radio" name="test2" id="6"value="1"/>
-    <input class="star" type="radio" name="test2" id="7"value="2"/>
-    <input class="star" type="radio" name="test2" id="8"value="3"/>
-    <input class="star" type="radio" name="test2" id="9"value="4"/>
-    <input class="star" type="radio" name="test2" id="10"value="5"/>
+    <input class="star" type="radio" name="test8" id="6"value="1"/>
+    <input class="star" type="radio" name="test8" id="7"value="2"/>
+    <input class="star" type="radio" name="test8" id="8"value="3"/>
+    <input class="star" type="radio" name="test8" id="9"value="4"/>
+    <input class="star" type="radio" name="test8" id="10"value="5"/>
 	
 				    </li><br>
 					
-					<li>Оцена: 
+					<li>Литература: 
 					<br>
-    <input class="star" type="radio" name="test3" id="11" value="1"/>
-    <input class="star" type="radio" name="test3" id="12" value="2"/>
-    <input class="star" type="radio" name="test3" id="13" value="3"/>
-    <input class="star" type="radio" name="test3" id="14" value="4"/>
-    <input class="star" type="radio" name="test3" id="15" value="5"/>
+    <input class="star" type="radio" name="test9" id="11" value="1"/>
+    <input class="star" type="radio" name="test9" id="12" value="2"/>
+    <input class="star" type="radio" name="test9" id="13" value="3"/>
+    <input class="star" type="radio" name="test9" id="14" value="4"/>
+    <input class="star" type="radio" name="test9" id="15" value="5"/>
 	
 			        </li>
 					
