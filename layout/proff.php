@@ -16,7 +16,7 @@
 		 <script src='star/jquery.js' type="text/javascript"></script>
 	<script src='star/jquery.rating.js' type="text/javascript" language="javascript"></script>
     <link href='star/jquery.rating.css' type="text/css" rel="stylesheet"/>
-	<script src="star/star_validation.js" type="text/javascript"></script>
+	
 <!--- Zavrsuva skripta za dzvezdite + css -->
 	
 		

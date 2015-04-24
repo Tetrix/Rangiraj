@@ -12,7 +12,7 @@
 		<!-- <script type="text/javascript" src="jquery-1.4.4.min.js"></script> -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
 		<script type="text/javascript" src="revealcinema\jquery.reveal.js"></script>
-		<script src="star/star_validation.js" type="text/javascript"></script>
+		
 	
 
 	
@@ -87,10 +87,11 @@
 						
 						<!-- Zvezdi fax -->
 					
-					<form action="star/star_validation.php" id="form1_validation"method="post" >
+					<form action="" id="form1_validation"method="post" >
 				    <li>	Пракса:	
 					<br>
-    <input class="star" type="radio" name="test1" id="1" value="1"/>
+					
+	<input class="star" type="radio" name="test1" id="1" value="1"/>
     <input class="star" type="radio" name="test1" id="2"value="2"/>
     <input class="star" type="radio" name="test1" id="3"value="3"/>
     <input class="star" type="radio" name="test1" id="4"value="4"/>
@@ -123,9 +124,11 @@
 					<br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
-						<button type="submit" class="btn btn-sm btn-primary sharp" id="button1_val" ><div id="txt"> Потврди</div> </button>
-						<a class="close-reveal-modal">&#215;</a>
+						
+						<button type="submit" class="btn btn-sm btn-primary sharp" id="button1_val" onclick="check()" ><div id="txt" > Потврди</div> </button>
 						</form>
+						<a class="close-reveal-modal">&#215;</a>
+						
 						<!-- Zavrsuva zvezdi kampus -->
 				</div>
 	
@@ -137,7 +140,7 @@
 						<ul>
 						
 						<!-- Zvezdi kampus -->
-						<form action="" id="form2_validation" method="post">
+						<form action="star/star_validation.php" id="form2_validation" method="post">
 				    <li>	Хигиена:	
 					<br>
      <input class="star" type="radio" name="test1" id="1" value="1"/>
@@ -173,7 +176,7 @@
                     <br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
-						<button type="submit" class="btn btn-sm btn-primary sharp" id="button2_val" ><div id="txt"> Потврди</div></button>
+						<button type="submit" class="btn btn-sm btn-primary sharp" id="button2_val"onclick="check2()"><div id="txt"> Потврди</div></button>
 						<a class="close-reveal-modal">&#215;</a>
 						</form>
 						<!-- Zavrsuva zvezdi kampus -->
@@ -185,4 +188,65 @@
 						});
 				</script>
 
-</div>
+				<!--- SKRIPTA ZA VALIDACIJA ZA DZVEZDITE KAJ FAKULTET I KAMPUS -->
+			
+
+			
+				<script>
+var button1_val= document.getElementById("button1_val");
+   var button2_val= document.getElementById("button2_val");
+   var button3_val= document.getElementById("button3_val"); 
+   
+   var one= document.getElementById("1");
+   var two= document.getElementById("2");
+   var three= document.getElementById("3");
+   var four= document.getElementById("4");
+   var five= document.getElementById("5");
+   var six= document.getElementById("6");
+   var seven= document.getElementById("7");
+   var eight= document.getElementById("8");
+   var nine= document.getElementById("9");
+   var ten= document.getElementById("10");
+   var eleven= document.getElementById("11");
+   var twelve= document.getElementById("12");
+   var thirteen= document.getElementById("13");
+   var fourteen= document.getElementById("14");
+   var fifteen= document.getElementById("15");
+function check() {
+ if((one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false))
+   {
+    button3_val.onclick=alert("Рангирајте ги сите параметри");
+   }
+if((six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false))
+   {
+    button3_val.onclick=alert("Рангирајте ги сите параметри");
+   }
+if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false))
+   {
+    button3_val.onclick=alert("Рангирајте ги сите параметри");
+   }
+   }
+
+function check2(){
+ if((one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false))
+   {
+    button3_val.onclick=alert("Рангирајте ги сите параметри");
+   }
+ if((six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false))
+   {
+    button3_val.onclick=alert("Рангирајте ги сите параметри");
+   }
+ if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false))
+   {
+    button3_val.onclick=alert("Рангирајте ги сите параметри");
+   }
+}
+</script>
+
+
+
+
+<!-- ZAVRSUVA SKRIPTA ZA VALIDACIJA ZA DZVEZDITE KAJ FAKULTET I KAMPUS -->
+
+				
+				</div>

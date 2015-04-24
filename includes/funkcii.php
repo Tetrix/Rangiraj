@@ -3,7 +3,7 @@
 function redirectTo ($lokacija){
 	if ($lokacija != NULL)
 		header("Location: {$lokacija}");
-	exit;
+	
 }
 
 
