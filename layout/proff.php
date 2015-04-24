@@ -54,7 +54,7 @@
 					
 				    <li>	Предавања:	
 					<br>
-    <input class="star" type="radio" name="test1" id="1" value="1"/>
+     <input class="star" type="radio" name="test1" id="1" value="1"/>
     <input class="star" type="radio" name="test1" id="2"value="2"/>
     <input class="star" type="radio" name="test1" id="3"value="3"/>
     <input class="star" type="radio" name="test1" id="4"value="4"/>
@@ -74,11 +74,11 @@
 					
 					<li>Оцена: 
 					<br>
-    <input class="star" type="radio" name="test3" value="1"/>
-    <input class="star" type="radio" name="test3" value="2"/>
-    <input class="star" type="radio" name="test3" value="3"/>
-    <input class="star" type="radio" name="test3" value="4"/>
-    <input class="star" type="radio" name="test3" value="5"/>
+    <input class="star" type="radio" name="test3" id="11" value="1"/>
+    <input class="star" type="radio" name="test3" id="12" value="2"/>
+    <input class="star" type="radio" name="test3" id="13" value="3"/>
+    <input class="star" type="radio" name="test3" id="14" value="4"/>
+    <input class="star" type="radio" name="test3" id="15" value="5"/>
 	
 			        </li>
 					
@@ -88,7 +88,7 @@
 						<br>
 						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
 						<br>
-						<button type="submit" name="potvrdi3" class="btn btn-sm btn-primary sharp" id="button3_val"><div id="txt"> Потврди</div></button>
+						<button type="submit" name="potvrdi3" class="btn btn-sm btn-primary sharp" id="button3_val" onclick="form_star_validation"><div id="txt"> Потврди</div></button>
 						<a class="close-reveal-modal">&#215;</a>
 						</form>
 						<!-- Zavrsuva zvezdi kampus -->

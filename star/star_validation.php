@@ -1,10 +1,10 @@
-
 <?php
-$star1=$_POST["test1"];
-$star2=$_POST["test2"];
-$star3=$_POST["test3"];
 
+include ("../includes/funkcii.php");
+$location="../index.php?page=rangiraj";
+redirectTo($location);
 
+/*
 if(!isset($star1))
 {
  echo "<script type=\"text/javascript\">window.alert('Vnesi vrednost za site zvezdi.');window.location.href = '/index.php?page=proff';</script>";
@@ -21,7 +21,7 @@ if(!isset($star3))
  </script>";
 }
 
-/*
+
 if(!isset($star2))
 {
 $e['star2'] = "<p><strong>Popolnete za vtoriot.</strong></p>";
