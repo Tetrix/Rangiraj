@@ -230,15 +230,15 @@ if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked =
 function check2(){
  if((one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте го полето хигиена");
+   alert("Рангирајте го полето хигиена");
    }
  if((six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте го полето локација");
+    alert("Рангирајте го полето локација");
    }
  if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false))
    {
-    button3_val.onclick=alert("Рангирајте го полето услови");
+    alert("Рангирајте го полето услови");
    }
 }
 </script>
