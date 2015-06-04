@@ -1,6 +1,10 @@
 <div class="main" id="pozadinalogin">
 	
+<<<<<<< HEAD
 			<BR><br>
+=======
+			<BR><BR><br>
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 			
 <div class ="row">
 		

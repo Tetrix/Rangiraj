@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 <div id="pozadinarezultati">
 
 <div class="main1">
@@ -11,6 +14,7 @@
 			  <link rel="stylesheet" href="styles\searchstyle.css">
 	</head>
 
+<<<<<<< HEAD
 	<br><br>
 
 	<div class="row">
@@ -84,6 +88,79 @@
 
 
 				<script>
+=======
+	<br><br><br><br><br><br><br><br>
+<div class="row">
+<div class="col-sm-12">
+  <br>
+    <form class="search" method="post" action="index.html">
+      <input type="search" name="q" placeholder="Search..." autocomplete="off">
+      <ul class="search-ac">
+        <li><a href="index.html">Search Result #1<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #2<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #3<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #4</a></li>
+      </ul>
+    </form>
+
+ </div>
+</div>
+<br>
+
+<div class="row">
+<div class="col-sm-12">
+  <br>
+    <form class="search" method="post" action="index.html">
+      <input type="search" name="q" placeholder="Универзитет..." autocomplete="off">
+      <ul class="search-ac">
+        <li><a href="index.html">Search Result #1<br><span>Description...</span></a></li>
+        <li><a href="index.html">goka #2<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #3<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #4</a></li>
+      </ul>
+    </form>
+
+ </div>
+</div>
+<br>
+
+<div class="row">
+<div class="col-sm-12">
+  <br>
+    <form class="search" method="post" action="index.html">
+      <input type="search" name="q" placeholder="Универзитет..." autocomplete="off">
+      <ul class="search-ac">
+        <li><a href="index.html">Search Result #1<br><span>Description...</span></a></li>
+        <li><a href="index.html">goka #2<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #3<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #4</a></li>
+      </ul>
+    </form>
+
+ </div>
+</div>
+<br>
+
+<div class="row">
+<div class="col-sm-12">
+  <br>
+    <form class="search" method="post" action="index.html">
+      <input type="search" name="q" placeholder="Универзитет..." autocomplete="off">
+      <ul class="search-ac">
+        <li><a href="index.html">Search Result #1<br><span>Description...</span></a></li>
+        <li><a href="index.html">goka #2<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #3<br><span>Description...</span></a></li>
+        <li><a href="index.html">Search Result #4</a></li>
+      </ul>
+    </form>
+
+ </div>
+</div>
+</div>
+
+
+	<script>
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 						$(function() {
 						$("#rezultati a:contains('Резултати')").parent().addClass('active');
 						});

@@ -39,11 +39,14 @@
 							font-family:Ubuntu;
 						
 				}	
+<<<<<<< HEAD
 #txt5s{
 	color:black;
 	text-align:left;
 	font-family:Ubuntu;
 }
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 				
 #txt3 	
 				{
@@ -87,9 +90,14 @@
 							color:White !important;
 							font-style:bold;
 							font-family:Ubuntu;
+<<<<<<< HEAD
 							text-align:center !important;
 							
 
+=======
+							text-align:center;
+							
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 				}
 
 
@@ -105,10 +113,13 @@
 				{
 							background:#344A5F;
 				}
+<<<<<<< HEAD
 				.rangkopcinja2
 				{
 							background:white;
 				}
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 
 #button1 
 				{
@@ -152,6 +163,7 @@
 					{
 							background:white !important;
 					}
+<<<<<<< HEAD
 
 .rezguidetxt {
 
@@ -196,3 +208,5 @@
 ::-webkit-scrollbar { 
     display: none; 
 }
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67

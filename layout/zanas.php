@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="main" id="pozadinalogin">
 	
 <div class="row">
@@ -97,6 +98,14 @@
 	
 		<div class="col-sm-2"></div>
 </div>		
+=======
+<div class="main">
+	
+voa e za vaste deca, ZA NAS
+			
+			
+			
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 			
 			
 			

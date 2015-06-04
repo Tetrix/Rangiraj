@@ -23,6 +23,7 @@
 		
 </head>
 <br><br><br>
+<<<<<<< HEAD
 
 
 
@@ -36,6 +37,8 @@
 
 
 
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 <div class="row">
 
 <div class="col-sm-3"> </div>
@@ -44,6 +47,7 @@
 			
 					<div class="jumbotron" id="jumboproff">
 						
+<<<<<<< HEAD
 <?php 
 require 'connect.php';
 
@@ -61,6 +65,12 @@ while ($row = $result->fetch_assoc())
 							  echo '★  ' ,$row['ime_prezime_prof'] , '<br>';  }}
 	                            
 ?> </a>
+=======
+							<ul>
+								<li><a href="#" data-reveal-id="myModal5"  class="nounderline"> Професор 1 </a> </li>
+							</ul>
+						
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 					</div>
 				
 			</div>
@@ -70,19 +80,26 @@ while ($row = $result->fetch_assoc())
 </div>
 
 
+<<<<<<< HEAD
 
 
 
 <!--- PROFESORI KRAJ  -->
 
 
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 	<div id="myModal5" class="reveal-modal modalbg revealpaddig">
 						<h3 id="txt3">Професорот може да го рангирате според:</h3>
 						<ul>
 						
 						
 						<!-- Zvezdi prof -->
+<<<<<<< HEAD
 				    <form action="star/insert_indb.php" id="form3_validation" method="post">
+=======
+				    <form action="star/star_validation.php" id="form3_validation" method="post">
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 					
 				    <li>	Одговорност:
 					<br> 
@@ -118,7 +135,11 @@ while ($row = $result->fetch_assoc())
 					
                     </ul>
 						<br>
+<<<<<<< HEAD
 						<textarea rows="4" cols="60" name="prof_kom" placeholder="Внеси коментар"></textarea>
+=======
+						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 						<br>
 						<button type="submit" name="potvrdi3" class="btn btn-sm btn-primary sharp" id="button3_val" onclick="form_star_validation"><div id="txt"> Потврди</div></button>
 						<a class="close-reveal-modal">&#215;</a>

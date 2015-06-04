@@ -7,9 +7,12 @@
 				right:0px;
 				bottom:0px;
 				z-index: -1;
+<<<<<<< HEAD
 				 overflow-y:scroll !important;
 				  overflow-y:hidden;
     				overflow-x:hidden;
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 
 			}
 
@@ -25,9 +28,12 @@
 				 z-index: -1;
 				 border-bottom-color:black;
 				 border-bottom:150px;
+<<<<<<< HEAD
 				 overflow-y:scroll !important;
 				  overflow-y:hidden;
     				overflow-x:hidden;
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 			}
 
 .main2
@@ -41,6 +47,7 @@
 				 background: rgba(45, 62, 82, 0.8);
 				 z-index: -1;
 				 padding:15px !Important;
+<<<<<<< HEAD
 				 font-family:ubuntu;
 				 overflow-y:scroll !important;
 				  overflow-y:hidden;
@@ -53,6 +60,11 @@
 #resizeboxdisable {
    resize: none;
 }		
+=======
+				 font-family:ubuntu
+			}
+			
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 
 
 .rezultaticol{
@@ -61,6 +73,7 @@
 		font-size:120%;
 		vertical-align:middle;
 }
+<<<<<<< HEAD
 
 .rezultaticol1{
 		color:white;
@@ -68,6 +81,8 @@
 		font-size:90%;
 		vertical-align:middle;
 }
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 .rezultaticol2{
 		color:white;
 		text-align:center;
@@ -140,11 +155,19 @@
 				
 #jumboproff
 				{
+<<<<<<< HEAD
 					
 					color:white;
 					 text-align:justify;
 					 font-family:ubuntu;
 					background: rgba(45, 62, 82, 0.8);
+=======
+					 background: rgba(52, 74, 95, 0.5);
+					color:white;
+					 text-align:justify;
+					 font-family:ubuntu;
+				
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 					font-size:120%;
 					 
 				}
@@ -173,6 +196,7 @@
 
 .revealpaddig
 			{
+<<<<<<< HEAD
 
 				padding:10px !Important;
 				top:10% !important;
@@ -216,3 +240,9 @@
 
 
 
+=======
+				padding:15px !Important;
+			}
+
+			
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67

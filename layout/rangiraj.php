@@ -62,7 +62,11 @@
 			</a>
 				
 			<br>				
+<<<<<<< HEAD
 			<div class="jumbotron" id="jumbo1">  Во овој дел може да го рангирате кампусот според Хигиената, Локацијата во однос на живеалиштата и воопшто какви се условите за студирање во истиот од аспект на опрема, простории итн.  </div>
+=======
+			<div class="jumbotron" id="jumbo1">  Во  </div>
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 		</div>
 										
 		<div class="col-sm-2">
@@ -87,7 +91,11 @@
 						
 						<!-- Zvezdi fax -->
 					
+<<<<<<< HEAD
 					<form action="star/insert_indb.php" id="form1_validation"method="post" >
+=======
+					<form action="star/star_validation.php" id="form1_validation"method="post" >
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 				    <li>	Пракса:	
 					<br>
 					
@@ -122,7 +130,11 @@
 					
                     </ul>
 					<br>
+<<<<<<< HEAD
 						<textarea rows="4" cols="60" name="fax_kom" id="resizeboxdisable" placeholder="Внеси коментар"></textarea>
+=======
+						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 						<br>
 						
 						<button type="submit" class="btn btn-sm btn-primary sharp" id="button1_val" onclick="check()" ><div id="txt" > Потврди</div> </button>
@@ -140,7 +152,11 @@
 						<ul>
 						
 						<!-- Zvezdi kampus -->
+<<<<<<< HEAD
 						<form action="star/insert_indb.php" id="form2_validation" method="post">
+=======
+						<form action="star/star_validation.php" id="form2_validation" method="post">
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 				    <li>	Хигиена:	
 					<br>
      <input class="star" type="radio" name="test4" id="16" value="1"/>
@@ -174,7 +190,11 @@
 					
                     </ul>
                     <br>
+<<<<<<< HEAD
 						<textarea rows="4" cols="60" name="kam_kom" id="resizeboxdisable" placeholder="Внеси коментар"></textarea>
+=======
+						<textarea rows="4" cols="60" placeholder="Внеси коментар"></textarea>
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
 						<br>
 						<button type="submit" class="btn btn-sm btn-primary sharp" id="button2_val"onclick="check2()"><div id="txt"> Потврди</div></button>
 						<a class="close-reveal-modal">&#215;</a>
@@ -196,6 +216,10 @@
 var button1_val= document.getElementById("button1_val");
    var button2_val= document.getElementById("button2_val");
    var button3_val= document.getElementById("button3_val"); 
+<<<<<<< HEAD
+=======
+   
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
    var one= document.getElementById("1");
    var two= document.getElementById("2");
    var three= document.getElementById("3");
