@@ -1,0 +1,212 @@
+.header 	
+				{
+							position:fixed;
+							background-color:#2D3E52;
+							width: 100%;
+							height:16%;
+				}
+				
+#txt 	
+				{
+							color: white;
+							font-family:Ubuntu;
+							font-size:85%;
+							text-align:justify;
+				}	
+
+#txtlogin	
+				{
+							font-size:150%;
+							color: white;
+							font-family:Ubuntu;
+	
+				}	
+
+#txtwarn	
+				{
+							color: white;
+							font-family:Ubuntu;
+							text-align:justify;
+							
+							font-size:90%;
+	
+				}					
+				
+
+#txt2 	
+				{
+							color: white;
+							font-family:Ubuntu;
+						
+				}	
+<<<<<<< HEAD
+#txt5s{
+	color:black;
+	text-align:left;
+	font-family:Ubuntu;
+}
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
+				
+#txt3 	
+				{
+							color: black;
+							font-family:Ubuntu;
+							font-size:30px;
+							text-align:center;
+				}	
+	
+	
+.btn.sharp 
+				{
+							border-radius:0;
+							font-family:Ubuntu;
+							
+							
+				}
+				
+				
+.nounderline
+				{
+							text-decoration: none !important
+				}
+
+.navigationbar	
+				{
+							position:fixed;
+							left:0px;
+							right:0px;
+							background-color:#344A5F;
+							top:15%;
+							height:5%;
+							bottom:80%;
+				}
+				
+			
+.navbar_text
+				{
+							font-size:150%;
+							vertical-align:middle !important;
+							color:White !important;
+							font-style:bold;
+							font-family:Ubuntu;
+<<<<<<< HEAD
+							text-align:center !important;
+							
+
+=======
+							text-align:center;
+							
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
+				}
+
+
+
+.bg		
+				{
+							
+							background:#344A5F;
+					
+				}
+				
+.rangkopcinja
+				{
+							background:#344A5F;
+				}
+<<<<<<< HEAD
+				.rangkopcinja2
+				{
+							background:white;
+				}
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
+
+#button1 
+				{
+							display: none;
+				}
+
+#l1 
+				{
+							display: none;
+							color:white;
+							font-family:Ubuntu;
+							font-size:20px;
+				}			
+
+	
+
+.glyphicon.glyphicon-log-in {
+		
+}	
+
+.glyphicon.glyphicon-plus {
+ 
+}	
+
+.glyphicon.glyphicon-user {
+  
+}	
+	
+#jumbologin 
+					{
+							 background: rgba(45, 62, 82, 0.7);
+					}
+					
+#jumbologin1 
+					{
+							 background: rgba(45, 62, 82, 0.7);
+							 padding: 15px !important;
+					}	
+
+.modalbg	
+					{
+							background:white !important;
+					}
+<<<<<<< HEAD
+
+.rezguidetxt {
+
+				position:fixed;
+				color:white;
+				font-family:ubuntu;
+				left:0px;
+				right:0px;
+				font-size:105%;
+
+}
+
+.rezguidetxtbig {
+
+				position:fixed;
+				color:white;
+				font-family:ubuntu;
+				left:0px;
+				right:0px;
+				font-size:150%;
+				text-align:center;
+
+}
+
+.txtinfo	
+				{
+							font-size:130%;
+							color: white;
+							font-family:Ubuntu;
+							text-align: center;
+	
+				}
+
+.txtinfosm	
+				{
+							font-size:90%;
+							color: white;
+							font-family:Ubuntu;
+							text-align: center;	
+				}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+=======
+>>>>>>> 84375c12d61e79c84b897eb5d983b14b9667ed67
