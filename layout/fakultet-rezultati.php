@@ -4,55 +4,40 @@
 <br>
 <form action="index.php?page=lenta-fakultet" method="post">
 	<div class="row">
-			<div class="col-xs-6">
+		<div class="col-xs-6">
 				
 			<select class="form-control" name="ime_fax" id="sel1">
 					 
-							<option selected disabled> Одберете го Факултетот</option>
-							<?php 
-require 'connect.php';
-
-if($result = $rangiraj->query("SELECT ime_fakultet FROM fakulteti "))
-{
-
-while ($row = $result->fetch_assoc())
-{
-
-?>
-
 							
-								<option><?php 
+<?php
+
+	require 'connect.php';
+
+	if($result = $rangiraj->query("SELECT ime_fakultet FROM fakulteti "))
+	{
+
+	while ($row = $result->fetch_assoc())
+{
+
+?>						
+				<option><?php 
 						
-							  echo $row['ime_fakultet'] ;  }}
-	                            
+					 echo $row['ime_fakultet'] ;  }}	                            
 ?>
 
-</option>
-					        </select>	
-			</div>
-			
-			
-				<div class="col-xs-6">
-				<button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp">Потврди</button>
-			
-				</div>
+				</option>
+			</select>	
 		</div>
-		</form>
-		
-		
-	
-
-	
+			
+			
+		<div class="col-xs-6">
+			<button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp">Потврди</button>
+			
+		</div>
 	</div>
+</form>
+</div>
 
-	
-	
-	
-	
-	
-
-
-	</div>
 	
 	
 	

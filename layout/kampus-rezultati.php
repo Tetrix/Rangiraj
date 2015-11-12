@@ -9,32 +9,14 @@
 					
 							<option selected disabled> 2) Одберет го Кампусот  </option>
 							<option> Кампус 2 </option>
-					
-							</select>	
+			</select>	
 			</div>
-			
-			
 				<div class="col-xs-6">
 				<button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp">Потврди</button>
 			
-				</div>
-					
-
-			
-			
-			
-			
+				</div>			
 	</div>
-	
-
-	
-	
-	
-	
-	
-
-
-	</div>
+</div>
 	
 	
 	

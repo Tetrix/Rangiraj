@@ -1,5 +1,3 @@
-
-
 <div class="main2">
 <br>
 	<div class="row">
@@ -86,13 +84,9 @@
 			
 			<div class="col-xs-2">
 			
-			</div>
-
-			
-		
+			</div>		
 	</div>
 	<hr>
-
 	</div>
 	</div>
 	

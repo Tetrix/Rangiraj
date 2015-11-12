@@ -1,3 +1,8 @@
+<?php 
+if(isset($_POST["ime_fax"]))
+{
+$name_fax=$_POST["ime_fax"];
+?>
 
 <div class="main2">
 <br>
@@ -6,7 +11,7 @@
 			
 			<div class="col-xs-8">
 
-				<h2 class="rezultaticol2"> </h2>
+				<h2 class="rezultaticol2"> <?php echo $name_fax ;  }?></h2>
 
 			</div>
 			
@@ -16,7 +21,8 @@
 	<div class="row">
 	<div class="col-xs-1"></div>
 			<div class="col-xs-2">
-				<h5  class="rezultaticol"><?php echo $_POST["ime_fax"] ;?><h5>
+				<h5  class="rezultaticol">Пракса
+				<h5>
 			</div>
 		<div class="col-xs-2"></div>
 			<div class="col-xs-2">
@@ -31,7 +37,7 @@
 	<div class="row">
 			<div class="col-xs-1"></div>
 			<div class="col-xs-2">
-				<h5  class="rezultaticol">&nbsp&nbsp<img src="pictures/zvez.png" height="25px" width="25px"><h5>
+				<h5  class="rezultaticol"><!--ocena -->    &nbsp&nbsp<img src="pictures/zvez.png" height="25px" width="25px"><h5>
 			</div>
 				<div class="col-xs-2"></div>
 			<div class="col-xs-2">
