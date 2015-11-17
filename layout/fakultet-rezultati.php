@@ -4,40 +4,55 @@
 <br>
 <form action="index.php?page=lenta-fakultet" method="post">
 	<div class="row">
-		<div class="col-xs-6">
+			<div class="col-xs-6">
 				
 			<select class="form-control" name="ime_fax" id="sel1">
 					 
 							
-<?php
+							<?php 
+require 'connect.php';
 
-	require 'connect.php';
-
-	if($result = $rangiraj->query("SELECT ime_fakultet FROM fakulteti "))
-	{
-
-	while ($row = $result->fetch_assoc())
+if($result = $rangiraj->query("SELECT ime_fakultet FROM fakulteti "))
 {
 
-?>						
-				<option><?php 
-						
-					 echo $row['ime_fakultet'] ;  }}	                            
+while ($row = $result->fetch_assoc())
+{
+
 ?>
 
-				</option>
-			</select>	
-		</div>
-			
-			
-		<div class="col-xs-6">
-			<button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp">Потврди</button>
-			
-		</div>
-	</div>
-</form>
-</div>
+							
+								<option><?php 
+						
+							  echo $row['ime_fakultet'] ;  }}
+	                            
+?>
 
+</option>
+					        </select>	
+			</div>
+			
+			
+				<div class="col-xs-6">
+				<button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp">Потврди</button>
+			
+				</div>
+		</div>
+		</form>
+		
+		
+	
+
+	
+	</div>
+
+	
+	
+	
+	
+	
+
+
+	</div>
 	
 	
 	

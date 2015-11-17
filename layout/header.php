@@ -9,13 +9,19 @@
 					<link rel="stylesheet" href="styles\headerstyle.css">
 					<!--Main CSS's -->
 					<link rel="stylesheet" href="styles\main_class.css">
+					<!-- Hover.CSS document -->
+					<link rel="stylesheet" href="styles\hover.css" media="all">
+					<!--- Reveal effect -->
+					<link rel="stylesheet" href="revealcinema\reveal.css">	
 		
 					
 					<!-- Latest compiled and minified CSS -->
 					<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-					<!-- jQuery library -->
+					<!-- jQuery library & libraries for reveal effect-->
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+					<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+					<script type="text/javascript" src="revealcinema\jquery.reveal.js"></script>
 
 					<!-- Latest compiled JavaScript -->
 					<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -27,8 +33,7 @@
 					    <link href='star/jquery.rating.css' type="text/css" rel="stylesheet"/>
 						<!-- Zavrsuva Skripti za zvezdi -->
 						
-						<!-- Hover.CSS document -->
-						<link rel="stylesheet" href="styles\hover.css" media="all">
+						
 						
 								<style>
 									

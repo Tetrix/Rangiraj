@@ -2,8 +2,8 @@
 if(isset($_POST["ime_fax"]))
 {
 $name_fax=$_POST["ime_fax"];
-?>
 
+?>
 <div class="main2">
 <br>
 	<div class="row">
