@@ -27,13 +27,6 @@
 					    <link href='star/jquery.rating.css' type="text/css" rel="stylesheet"/>
 						<!-- Zavrsuva Skripti za zvezdi -->
 						
-						<!-- Hover.CSS document -->
-						<link rel="stylesheet" href="styles\hover.css" media="all">
-                        
-                        
-    
-						
-						
 					
 				
 					<!--- Reveal effect -->
