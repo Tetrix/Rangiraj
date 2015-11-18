@@ -174,7 +174,7 @@
 				<!--- SKRIPTA ZA VALIDACIJA ZA DZVEZDITE KAJ FAKULTET I KAMPUS -->
 			
 
-			
+
 				<script>
 
    var one= document.getElementById("1");
