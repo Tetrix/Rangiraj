@@ -1,14 +1,15 @@
-<div class="main" id="pozadinalogin">
+<div class="mainww">
+<div class="main">
 
 <head>
 			
-			<title>Регистрирај се</title>
+			<title>Register</title>
 
 			
 						
 </head>
 
-			<BR><BR>
+			<BR><BR>	<BR><BR>
 			
 <div class ="row">
 		
@@ -22,7 +23,7 @@
 													<p id="txtwarn">Одберете го вашиот универзитет/факултет поради тоа што ќе можете да гласате само за истиот што се го одбрале, и тоа еднаш по семестар </p> 		
 												</center>
 												
-													<form role="form" action="post">
+													<form role="form">
 														<div class="form-group">
 																			
 															<div class="form-group has-feedback">
@@ -61,6 +62,54 @@
 			
 			<div class="col-sm-4"></div>
 </div>
-
-  		
+ </div>
 </div>
+ 
+
+  				
+
+            
+    
+    
+                
+    <script type="text/javascript">
+
+                        $(document).ready(function() {
+                            $(".main").css("display", "none");
+
+                            $(".main").slideDown(1000);
+
+                            $("a.transition").click(function(event){
+                                event.preventDefault();
+                                linkLocation = this.href;
+
+                            });
+
+                            function redirectPage() {
+                                window.location = linkLocation;
+                            }
+                        });
+
+                </script>
+
+    
+      <script type="text/javascript">
+
+                        $(document).ready(function() {
+                            $(".mainww").css("display", "none");
+
+                            $(".mainww").fadeIn(1000);
+
+                            $("a.transition").click(function(event){
+                                event.preventDefault();
+                                linkLocation = this.href;
+
+                            });
+
+                            function redirectPage() {
+                                window.location = linkLocation;
+                            }
+                        });
+
+                </script>
+                

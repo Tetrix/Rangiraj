@@ -1,3 +1,4 @@
+/* main class for the content positioning of a certain page */
 .main 		
 			{	
 				position:fixed;
@@ -7,11 +8,51 @@
 				right:0px;
 				bottom:0px;
 				z-index: -1;
-				 overflow-y:scroll !important;
-				  overflow-y:hidden;
-    				overflow-x:hidden;
+                overflow-y:scroll !important;
+                overflow-y:hidden;
+                overflow-x:hidden;
 
 			}
+/*setting the background wallpaper for the pages that use the main class (for jquerry transition effect*/
+.mainww	
+			{	
+				position:fixed;
+				color:black;
+				top:20%;
+				left:0px;
+				right:0px;
+				bottom:0px;
+				z-index: -1;
+				overflow-y:scroll !important;
+				overflow-y:hidden;
+                overflow-x:hidden;
+                background-image: url(http://i.imgur.com/7vMNpFe.jpg) ;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+
+			}
+
+/*setting the background wallpaper for the "Рангирај" page seperately (for the jquerry transition effect)*/
+.mainwwrang
+            {
+    	       position:fixed;
+				color:black;
+				top:20%;
+				left:0px;
+				right:0px;
+				bottom:0px;
+				z-index: -1;
+				overflow-y:scroll !important;
+				overflow-y:hidden;
+                overflow-x:hidden;
+                background-image: url( http://i.imgur.com/dcvtoem.jpg) ;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+            }
 
 .main1 		
 			{	
@@ -30,6 +71,8 @@
     				overflow-x:hidden;
 			}
 
+
+/* main2 class for the content positioning of a certain page */
 .main2
 			{
 				position:fixed;
@@ -37,24 +80,22 @@
 				top:20%;
 				left:26%;
 				right:0;
-				
-				 background: rgba(45, 62, 82, 0.8);
-				 z-index: -1;
-				 padding:15px !Important;
-				 font-family:ubuntu;
-				 overflow-y:scroll !important;
-				  overflow-y:hidden;
-    				overflow-x:hidden;
-			
-  
+                background: rgba(45, 62, 82, 0.8);
+				z-index: -1;
+				padding:15px !Important;
+				font-family:ubuntu;
+				overflow-y:scroll !important;
+				overflow-y:hidden;
+                overflow-x:hidden;
+            }
 
-
-			}
+/* disabling the re-size ability in the foundation's modal "cinema view" comment box */
 #resizeboxdisable {
    resize: none;
 }		
 
 
+/* start of the customization for the text in the "Резултати" pages' columns */
 .rezultaticol{
 		color:white;
 		text-align:center;
@@ -74,26 +115,36 @@
 		font-size:200%;
 		vertical-align:middle;
 }
-		
+/* end of the customization for the text in the "Резултати" pages' columns */
+
+
+
+
+/* Currently not using, due to the new mainww & mainrang classes
 #pozadina
 
 			{
-							background-image: url( http://i.imgur.com/dcvtoem.jpg) ;
-						  -webkit-background-size: cover;
-						  -moz-background-size: cover;
-						  -o-background-size: cover;
-							background-size: cover;
+				background-image: url( http://i.imgur.com/dcvtoem.jpg) ;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
 			}
 			
 #pozadinalogin
 
 			{
-							background-image: url(http://i.imgur.com/7vMNpFe.jpg) ;
-						  -webkit-background-size: cover;
-						  -moz-background-size: cover;
-						  -o-background-size: cover;
-						  background-size: cover;
+				background-image: url(http://i.imgur.com/7vMNpFe.jpg) ;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
 			}
+*/
+
+
+
+/*background wallpaper for the "Резултати" page*/
 #pozadinarezultati
 
 			{
@@ -102,59 +153,54 @@
 						bottom:0px;
 						left:0px;
 						right:0px;
-							background-image: url(http://i.imgur.com/i8Xt43b.jpg) ;
-						  -webkit-background-size: cover;
-						  -moz-background-size: cover;
-						  -o-background-size: cover;
-						  background-size: cover;
-						  z-index: -1;
+				        background-image: url(http://i.imgur.com/i8Xt43b.jpg) ;
+				        -webkit-background-size: cover;
+				        -moz-background-size: cover;
+				        -o-background-size: cover;
+				        background-size: cover;
+				        z-index: -1;
 			}
 			
-			
-#pozadinareg
 
-			{
-					background-image: url(http://defwalls.com/wallpapers-n/minimalistic-wind-blurred-_4331-50.jpg);
-						 
-			}			
-			
-
-			
+/* universal customization of a bootstrap's jumbotron*/
 #jumbo
 				{
 					 background: rgba(52, 74, 95, 0);
-					
 					 text-align:center;
 				}
-				
+
+/* universal customization of a bootstrap's jumbotron*/
 #jumbo1
 				{
-					 background: rgba(52, 74, 95, 0.5);
-					color:white;
-					 text-align:justify;
-					 font-family:ubuntu;
+                    background: rgba(52, 74, 95, 0.5);
+                    color:white;
+                    text-align:justify;
+                    font-family:ubuntu;
 					padding:15px; !important;
 					font-size:80%;
 					 
 				}
-				
+/* universal customization of a bootstrap's jumbotron at the listing of the proffesors from Рангирај page */				
 #jumboproff
 				{
 					
 					color:white;
-					 text-align:justify;
-					 font-family:ubuntu;
+                    text-align:justify;
+                    font-family:ubuntu;
 					background: rgba(45, 62, 82, 0.8);
 					font-size:120%;
 					 
-				}
+                }
+
+/*customization of the content (text) in a jumbotron*/
 #textjumbo 
 				{
 					text-align:center;
 					color:white;
 					font-family:ubuntu
 				}
-				
+
+/*customization of the content (text) in a jumbotron*/				
 #textjumbo2
 				{
 					text-align:center;
@@ -162,7 +208,8 @@
 					color:white;
 					font-family:ubuntu
 				}
-				
+
+/*customization of the content (text) in a jumbotron*/				
 #textjumbo3
 				{
 					text-align:center;
@@ -171,17 +218,11 @@
 					font-family:ubuntu
 				}
 
-.revealpaddig
-			{
-
-				padding:10px !Important;
-				top:10% !important;
-				left:52% !important;
-				right:52% !important;
-			}
 
 
-.schweinhund {
+/*don't remember*/
+.schweinhund 
+            {
 
 				position:fixed;
 				color:black;
@@ -190,18 +231,19 @@
 				right:0;
 				font-family:ubuntu
 
-}
+            }
 
-.listtext {
+/*don't remember*/
+.listtext 
+            {
 
-	font-family:ubuntu;
-	color:white;
-	font-size:130%;
+                font-family:ubuntu;
+                color:white;
+                font-size:130%;
 
+            }
 
-
-}
-
+/*a custom main class for a certain page*/
 .maincustom 		
 			{	
 				position:fixed;
@@ -214,5 +256,23 @@
 
 			}
 
+/*customization of the foundation's reveal modal -> cinema effect*/
+.revealpaddig
+			{
 
+				padding:10px !Important;
+				top:10% !important;
+				left:56% !important;
+				right:54% !important;
+			}
 
+/*customization of the text in the header, aka the real time display*/
+.headertxt
+
+            {
+
+                font-family: ubuntu;   
+                color:white;
+                font-size: 200%;
+
+            }

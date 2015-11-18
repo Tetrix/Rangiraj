@@ -1,9 +1,10 @@
-<div class="main" id="pozadinalogin">
+<div class="mainww">
+<div class="main">
 	
-			<BR><br>
+			
 			
 <div class ="row">
-		
+		<BR><br><BR><br>
 			<div class="col-sm-4"></div>
 				
 			<div class="col-sm-4">
@@ -35,25 +36,30 @@
 													<form role="form">
 														
 														
-															
+															<a href="#">Забравена Лозинка</a>
 															
 														
 															<button id="button" onclick="showLess()" type="button" class="btn btn-primary btn-md pull-right sharp">Потврди</button>
 															
 															<div class="checkbox">
 																	<label>
-																			<input type="checkbox" > <div id="txt">Остани најавен</div>
+																			<input type="checkbox"> <div id="txt">Остани најавен</div>
 																	</label>
-																											
+																</div>												
 													</form>
 							
-									</div>
+								
 			</div>
 			
 			<div class="col-sm-4"></div>
 </div>
 			
-				
+			</div>
+	
+
+   </div>       
+       </div>         
+                
 <script type="text/javascript">
 			
 			var button = document.getElementById("button");
@@ -78,7 +84,47 @@
 </script>
 			
  
-</div>
 
+  
+    
+    
+    <script type="text/javascript">
 
+                        $(document).ready(function() {
+                            $(".main").css("display", "none");
 
+                            $(".main").slideDown(1000);
+
+                            $("a.transition").click(function(event){
+                                event.preventDefault();
+                                linkLocation = this.href;
+
+                            });
+
+                            function redirectPage() {
+                                window.location = linkLocation;
+                            }
+                        });
+
+    </script>
+
+    
+      <script type="text/javascript">
+
+                        $(document).ready(function() {
+                            $(".mainww").css("display", "none");
+
+                            $(".mainww").fadeIn(1000);
+
+                            $("a.transition").click(function(event){
+                                event.preventDefault();
+                                linkLocation = this.href;
+
+                            });
+
+                            function redirectPage() {
+                                window.location = linkLocation;
+                            }
+                        });
+
+                </script>

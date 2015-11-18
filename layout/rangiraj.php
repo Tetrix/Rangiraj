@@ -1,4 +1,5 @@
-<div  class="main" id="pozadina">
+<div class="mainwwrang">
+<div  class="main">
 
 <br><br><br>
 
@@ -254,3 +255,46 @@ function check2(){
 
 				
 				</div>
+</div>
+
+
+<script type="text/javascript">
+
+                        $(document).ready(function() {
+                            $(".main").css("display", "none");
+
+                            $(".main").slideDown(1000);
+
+                            $("a.transition").click(function(event){
+                                event.preventDefault();
+                                linkLocation = this.href;
+
+                            });
+
+                            function redirectPage() {
+                                window.location = linkLocation;
+                            }
+                        });
+
+    </script>
+
+    
+      <script type="text/javascript">
+
+                        $(document).ready(function() {
+                            $(".mainwwrang").css("display", "none");
+
+                            $(".mainwwrang").fadeIn(1000);
+
+                            $("a.transition").click(function(event){
+                                event.preventDefault();
+                                linkLocation = this.href;
+
+                            });
+
+                            function redirectPage() {
+                                window.location = linkLocation;
+                            }
+                        });
+
+        </script>

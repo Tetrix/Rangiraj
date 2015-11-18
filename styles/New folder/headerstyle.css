@@ -39,12 +39,11 @@
 							font-family:Ubuntu;
 						
 				}	
-#txt5s
-                {
-                            color:black;
-                            text-align:left;
-                            font-family:Ubuntu;
-                }
+#txt5s{
+	color:black;
+	text-align:left;
+	font-family:Ubuntu;
+}
 				
 #txt3 	
 				{
@@ -196,68 +195,4 @@
 
 ::-webkit-scrollbar { 
     display: none; 
-}
-
-/*navbar-inverse is the class for the NAVIGATIONBAR's color*/
-.navbar-inverse 
-{
-    background-color:#455A64 !important;
-    z-index: 5;
-    
-}
-
-/*navbar_text is the class for the TEXT in the NAVIGATIONBAR*/
-.navbar_text
-{
-    font-size:120%;
-    color:White !important;
-    font-weight:bold !important;
-    font-family:Ubuntu;
-    margin-top: 7px;
-}   
-
-
-
-
-
-
-
-/*Login / Logout JS start */
-#button1 
-				{
-                            
-							display: none;
-				}
-
-#l1 
-				{
-							display: none;
-							color:white !important;
-							font-family:Ubuntu;
-                            font-weight: 400;
-							font-size:140%;
-                            margin-top:5%;
-}
-
-/*Login / Logout JS end*/
-
-
-/* CSS navbar effect: Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
 }

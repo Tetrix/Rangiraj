@@ -4,11 +4,9 @@
 <div class="main1">
 
 
-	<head>
-			  <meta charset="utf-8">
-			  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<head>  
 			  <title>Search Dropdown</title>
-			  <link rel="stylesheet" href="styles\searchstyle.css">
+			
 	</head>
 
 	<br><br>
@@ -89,3 +87,24 @@
 						});
 				</script>
 </div>
+    
+    
+      <script type="text/javascript">
+
+                        $(document).ready(function() {
+                            $(".main1").css("display", "none");
+
+                            $(".main1").fadeIn(1000);
+
+                            $("a.transition").click(function(event){
+                                event.preventDefault();
+                                linkLocation = this.href;
+
+                            });
+
+                            function redirectPage() {
+                                window.location = linkLocation;
+                            }
+                        });
+
+                </script>
