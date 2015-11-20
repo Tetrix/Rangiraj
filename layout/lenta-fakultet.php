@@ -168,7 +168,7 @@ while ($row = $result->fetch_assoc())
  	 	{
  	 	obj.style.color="yellow";
  	 	}
- 	 	else if (val>4)
+ 	 	else if (val>=4)
  	 	{
  	 		obj.style.color="#33ff33";
  	 	}

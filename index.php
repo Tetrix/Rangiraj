@@ -78,10 +78,10 @@ else if( $_GET['page'] ==  "lenta-kampus")
     include("layout/lenta-kampus.php");
 	}
 
-else 
-{
-include("layout/pocetna.php");
-}	
+#else 
+#{
+#include("layout/pocetna.php");
+#}	
 	
 ?>
 
