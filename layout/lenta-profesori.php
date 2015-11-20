@@ -22,8 +22,9 @@ while ($row = $result->fetch_assoc())
 
 ?>
 
-				<h2 class="rezultaticol2"> <?php echo $row['ime_prezime_prof']; ?> </h2>
-				<center> 
+				<h2 class="rezultaticol2"> <?php echo $row['ime_prezime_prof']; ?> </h2><br>
+				<center> <img class="img-circle" src="<?php echo $row['prof_img']?>"> 
+				
 				<h3 id="avg_ocena">
 				<?php
 				$row['rejting_na_profesori']=substr($row['rejting_na_profesori'],0,3);
