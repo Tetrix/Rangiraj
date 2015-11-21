@@ -30,7 +30,7 @@
 		<div class="col-sm-2">
 												
 			<a href="#" data-reveal-id="myModal"  class="nounderline">
-				<button type="button" class="btn btn-md rangkopcinja btn-block sharp" id="txt2"> Факултет </button>
+				<button type="button" class="btn btn-md rangkopcinja btn-block sharp hvr-float-shadow" id="txt2"> Факултет </button>
 			</a>
 			
 			<br>
@@ -41,7 +41,7 @@
 		<div class="col-sm-2">
 										
 			<a href="#" data-reveal-id="myModal2"  class="nounderline">
-				<button type="button" class="btn btn-md rangkopcinja btn-block sharp" id="txt2"> Кампус </button>
+				<button type="button" class="btn btn-md rangkopcinja btn-block sharp hvr-float-shadow" id="txt2"> Кампус </button>
 			</a>
 				
 			<br>				
@@ -52,7 +52,7 @@
 					
 									
 			<a href="index.php?page=proff"  class="nounderline">
-				<button type="button" class="btn btn-md rangkopcinja btn-block sharp" id="txt2"> Професор </button>
+				<button type="button" class="btn btn-md rangkopcinja btn-block sharp hvr-float-shadow" id="txt2"> Професор </button>
 			</a>	
 								
 			<br>
@@ -157,7 +157,7 @@
 					
                     </ul>
                     <br>
-						<textarea rows="4" cols="60" name="kam_kom" id="resizeboxdisable2" placeholder="Внеси коментар"></textarea>
+						<textarea rows="4" cols="60" name="kam_kom" id="resizeboxdisable" placeholder="Внеси коментар"></textarea>
 						<br>
 						<button type="submit" class="btn btn-sm btn-primary sharp" name="form2" id="button2_val"onclick="check2()"><div id="txt"> Потврди</div></button>
 						<a class="close-reveal-modal">&#215;</a>
