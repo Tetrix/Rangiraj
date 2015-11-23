@@ -9,6 +9,7 @@
 
 
                     <?php 
+                   
 require 'connect.php';
 
 if($result = $rangiraj->query("SELECT ime_fakultet FROM fakulteti "))

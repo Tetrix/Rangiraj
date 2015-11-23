@@ -18,38 +18,26 @@
                         <div Id="txtlogin"> Најавете се </div>
                     </center>
 
-                    <form role="form">
+                    <form role="form" name="login" action="layout/Login.php" method = "POST">
                         <div class="form-group">
 
                             <div class="form-group has-feedback">
                                 <label class="control-label" id="txt">Мејл:</label>
-                                <input type="text" name="najava_username" class="form-control" placeholder="Внесете го регистрираниот студентски мејл" />
+                                <input type="text" name="username" class="form-control" placeholder="Внесете го регистрираниот студентски мејл" />
                                 <i class="glyphicon glyphicon-user form-control-feedback"></i>
                             </div>
 
                             <div class="form-group has-feedback">
                                 <label class="control-label" id="txt">Лозинка:</label>
-                                <input type="password" name="najava_passoword" class="form-control" placeholder="Внесете ја регистрираната лозинка" />
+                                <input type="password" name="password" class="form-control" placeholder="Внесете ја регистрираната лозинка" />
                                 <i class="glyphicon glyphicon-lock form-control-feedback"></i>
                             </div>
 
                         </div>
-                    </form>
+                    
+                        <button id="button" type="submit" name="login" class="btn btn-primary btn-md pull-right sharp">Потврди</button>
 
-                    <form role="form">
-
-
-                        <a href="#">Забравена Лозинка</a>
-
-
-                        <button id="button" onclick="showLess()" type="button" class="btn btn-primary btn-md pull-right sharp">Потврди</button>
-
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">
-                                <div id="txt">Остани најавен</div>
-                            </label>
-                        </div>
+                    
                     </form>
 
 

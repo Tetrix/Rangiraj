@@ -1,6 +1,9 @@
 <!--This is the header-->
 <!doctype HTML>
 
+<?php session_start(); 
+
+?>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
@@ -151,6 +154,7 @@
                             <li>
                                 <!--ЛогиранТЕКСТ-->
                                 <button id="l1" type="button" class="btn btn-block btn-lg btn-link disabled pull-right"><span class="glyphicon glyphicon-user"></span> Логиран </button>
+
                             </li>
 
                             <li>
@@ -163,7 +167,7 @@
                             <li>
                                 <!--LogoutKopce initial display:hidden-->
                                 <a class="nounderline">
-                                    <button id="button1" type="button" onclick="showMore()" class="btn btn-md btn-danger btn-block"><span class="glyphicon glyphicon-log-out"></span>Одјави се</button>
+                                   <button id="button1" type="button" onclick="showMore()" class="btn btn-md btn-danger btn-block"><span class="glyphicon glyphicon-log-out"></span>Одјави се</button>
                                 </a>
                             </li>
 
@@ -197,10 +201,8 @@
             nsec = d.getSeconds();
         if (nmin <= 9) nmin = "0" + nmin
         if (nsec <= 9) nsec = "0" + nsec;
-
         document.getElementById('clockbox').innerHTML = "" + ndate + "-" + (nmonth + 1) + "-" + nyear + " " + nhour + ":" + nmin + ":" + nsec + "";
     }
-
     window.onload = function() {
         GetClock();
         setInterval(GetClock, 1000);
