@@ -1,10 +1,11 @@
+<?php session_start(); ?>
 <div class="main">
 
 
     <div class="row">
 
         <div class="col-sm-12">
-
+0000000000000000
 
             <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="2500" id="bs-carousel">
                 <!-- Overlay -->
@@ -23,7 +24,7 @@
                         <div class="slide-1"></div>
                         <div class="hero">
                             <hgroup>
-                                <h1>Информирај се</h1>
+                                <h1><?php echo $_SESSION['username']; ?></h1>
                                 <h3>Стекни се со објективно мислење за околината во која ќе студираш</h3>
                             </hgroup>
 

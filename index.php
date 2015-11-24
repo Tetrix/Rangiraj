@@ -1,6 +1,11 @@
 <?php
+// if(isset($_SESSION['username'])){
+	include("layout/header2.php");
+//}
+// else{
+// 	include("layout/header.php");
+// }
 
-include("layout/header.php");
 
 
 if(isset($_GET['page']) && $_GET['page'] == "pocetna")

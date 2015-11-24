@@ -1,7 +1,7 @@
 <!--This is the header-->
 <!doctype HTML>
 
-<!--  <?php session_start(); ?>  -->
+ <?php session_start(); ?>  
 
 <head>
     <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
@@ -143,29 +143,19 @@
 
                         <ul class="nav navbar-nav navbar-right">
 
-                            <li>
-                                <a href="index.php?page=registrirajse" class="nounderline">
-                                    <button id="d4" type="button" class="btn btn-md btn-primary btn-block"><span class="glyphicon glyphicon-plus"></span> Регистрирај се </button>
-                                </a>
-                            </li>
+                        
 
                             <li>
                                 <!--ЛогиранТЕКСТ-->
-                                <button id="l1" type="button" class="btn btn-block btn-lg btn-link disabled pull-right"><span class="glyphicon glyphicon-user"></span> Логиран </button>
+                                <button type="button" class="btn btn-block btn-lg btn-link disabled pull-right"><span class="glyphicon glyphicon-user"></span> Логиран </button>
 
-                            </li>
-
-                            <li>
-                                <a href="index.php?page=najavise" class="nounderline">
-                                    <button id="d3" type="button" class="btn btn-md btn-primary btn-block ">&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in"></span>&nbsp;Најави се &nbsp;&nbsp;&nbsp;</button>
-                                </a>
                             </li>
 
 
                             <li>
                                 <!--LogoutKopce initial display:hidden-->
                                 <a class="nounderline">
-                                   <button id="button1" type="button" onclick="showMore()" class="btn btn-md btn-danger btn-block"><span class="glyphicon glyphicon-log-out"></span>Одјави се</button>
+                                   <form action="Login.php" method="post"> <button type="submit" name="logout"class="btn btn-md btn-danger btn-block"><span class="glyphicon glyphicon-log-out"></span>Одјави се</button></form>
                                 </a>
                             </li>
 
