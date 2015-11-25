@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <div class="mainww">
     <div class="main">
 
@@ -52,6 +54,7 @@
     </div>
 </div>
 
+<!--
 <script type="text/javascript">
     var button = document.getElementById("button");
     var d3 = document.getElementById("d3");
@@ -71,6 +74,7 @@
         d4.style.display = "none";
     }
 </script>
+-->
 
 
 

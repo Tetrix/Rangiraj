@@ -1,6 +1,6 @@
 <?php
 // if(isset($_SESSION['username'])){
-	include("layout/header2.php");
+	include("layout/header.php");
 //}
 // else{
 // 	include("layout/header.php");

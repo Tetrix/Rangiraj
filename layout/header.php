@@ -1,8 +1,7 @@
 <!--This is the header-->
 <!doctype HTML>
 
-<!--  <?php session_start(); ?>  -->
-
+<?php session_start(); ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -41,6 +40,7 @@
     <link rel="stylesheet" href="styles\searchstyle.css">
 
 </head>
+
 
 
 
@@ -87,7 +87,7 @@
     </div>
 
 </div>
-
+  
 <!--NavigationBar-->
 <div class="row">
 
@@ -107,7 +107,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand navbar_text" href="#">Rangirajme.comlu.com</a>
+                        <a class="navbar-brand navbar_text" href="#"></a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="myNavbar">
@@ -115,13 +115,24 @@
                         <ul class="nav navbar-nav">
 
                             <li id="pocetna">
-                                <a class="nounderline hvr-grow-shadow" href="index.php?page=pocetna">
+                                <a class="nounderline id="rang" hvr-grow-shadow" href="index.php?page=pocetna">
                                     <p class="navbar_text"><span class="glyphicon glyphicon-home"></span>&nbsp;Почетна</p>
                                 </a>
                             </li>
 
                             <li id="rangiraj">
+                                <?php
+                                if(isset($_SESSION['username'])) 
+                                {?>
                                 <a class="nounderline hvr-grow-shadow" href="index.php?page=rangiraj">
+                                <?php }
+                                else{
+                                ?>
+                                <a class="nounderline hvr-grow-shadow" href="index.php?page=najavise">
+                                <?php }?>
+
+
+                                
                                     <p class="navbar_text"><span class="glyphicon glyphicon-film"></span>&nbsp;Рангирај</p>
                                 </a>
                             </li>
@@ -150,6 +161,7 @@
                             </li>
 
                             <li>
+                                
                                 <!--ЛогиранТЕКСТ-->
                                 <button id="l1" type="button" class="btn btn-block btn-lg btn-link disabled pull-right"><span class="glyphicon glyphicon-user"></span> Логиран </button>
 
@@ -157,7 +169,7 @@
 
                             <li>
                                 <a href="index.php?page=najavise" class="nounderline">
-                                    <button id="d3" type="button" class="btn btn-md btn-primary btn-block ">&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in"></span>&nbsp;Најави се &nbsp;&nbsp;&nbsp;</button>
+                                    <button id="d3" type="button"  class="btn btn-md btn-primary btn-block ">&nbsp;&nbsp;<span class="glyphicon glyphicon-log-in"></span>&nbsp;Најави се &nbsp;&nbsp;&nbsp;</button>
                                 </a>
                             </li>
 
@@ -165,7 +177,7 @@
                             <li>
                                 <!--LogoutKopce initial display:hidden-->
                                 <a class="nounderline">
-                                   <button id="button1" type="button" onclick="showMore()" class="btn btn-md btn-danger btn-block"><span class="glyphicon glyphicon-log-out"></span>Одјави се</button>
+                                   <form action="layout/Login.php" method="post"> <button id="button1"type="submit" name="logout"  class="btn btn-md btn-danger btn-block"><span class="glyphicon glyphicon-log-out"></span>Одјави се</button></form>
                                 </a>
                             </li>
 
@@ -206,3 +218,54 @@
         setInterval(GetClock, 1000);
     }
 </script>
+
+ <script type="text/javascript">
+
+
+
+    var button = document.getElementById("button");
+    var d3 = document.getElementById("d3");
+    var l1 = document.getElementById("l1");
+    var d4 = document.getElementById("d4");
+    var rang= document.getElementById("rang");
+
+
+<!-- Najavise -->
+    function showMore() {
+        button1.style.display = "none"
+        l1.style.display = "none";
+        d3.style.display = "block";
+        d4.style.display = "block";
+        
+
+    }
+
+
+
+
+<!-- odjavi se -->
+    function showLess() {
+
+        button1.style.display = "block";
+        l1.style.display = "block";
+        d3.style.display = "none";
+        d4.style.display = "none";
+    }
+    
+
+</script>
+
+
+
+
+<?php  if(!isset($_SESSION['username']))
+        {
+        echo "<script> showMore() </script>" ;
+
+        }
+        else   
+        {
+        echo "<script> showLess() </script>" ;
+        }
+
+        ?>

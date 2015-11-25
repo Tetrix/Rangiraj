@@ -147,7 +147,11 @@
 
                             <li>
                                 <!--ЛогиранТЕКСТ-->
-                                <button type="button" class="btn btn-block btn-lg btn-link disabled pull-right"><span class="glyphicon glyphicon-user"></span> Логиран </button>
+                                <button type="button" class="btn btn-block btn-lg btn-link disabled pull-right">
+                                    
+                                    <span class="glyphicon glyphicon-user logiranbutton"> Логиран </span>
+                                    
+                                </button>
 
                             </li>
 
@@ -155,7 +159,7 @@
                             <li>
                                 <!--LogoutKopce initial display:hidden-->
                                 <a class="nounderline">
-                                   <form action="Login.php" method="post"> <button type="submit" name="logout"class="btn btn-md btn-danger btn-block"><span class="glyphicon glyphicon-log-out"></span>Одјави се</button></form>
+                                   <form action="layout/Login.php" method="post"> <button type="submit" name="logout" class="btn btn-md btn-danger btn-block"><span class="glyphicon glyphicon-log-out"></span>Одјави се</button></form>
                                 </a>
                             </li>
 

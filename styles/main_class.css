@@ -281,7 +281,7 @@
 /*registration dropdown text style*/
 
 #txtdrp {
-    font-family: gentium;
+    font-family: Ubuntu;
     font-weight: bold;
     color: black;
     font-size:115%;
@@ -364,4 +364,14 @@
     -webkit-transform: translateY(5px);
     transform: translateY(5px);
     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+
+
+.logiranbutton
+{
+    margin-top: 3%;
+    font-family: ubuntu;
+    color:white;
+    font-size: 20px !important;
 }
