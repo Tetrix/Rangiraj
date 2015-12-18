@@ -1,3 +1,4 @@
+
 <div class="mainww">
     <div class="main">
 
@@ -26,33 +27,52 @@
                         <p id="txtwarn">Одберете го вашиот универзитет/факултет поради тоа што ќе можете да гласате само за истиот што се го одбрале, и тоа еднаш по семестар </p>
                     </center>
 
-                    <form role="form">
+                    <form role="form" method = "POST" action='layout/register.php'>
                         <div class="form-group">
 
                             <div class="form-group has-feedback">
                                 <label class="control-label" id="txt">Мејл:</label>
-                                <input type="text" class="form-control" name="reg_username" placeholder="Регистрирајте се со студентскиот мејл" />
+                                <input type="text" class="form-control" name="username" placeholder="Регистрирајте се со студентскиот мејл" />
                                 <i class="glyphicon glyphicon-user form-control-feedback"></i>
                             </div>
 
                             <div class="form-group has-feedback">
                                 <label class="control-label" id="txt">Лозинка:</label>
-                                <input type="password" name="reg_password" class="form-control" placeholder="Внесете лозинка" />
+                                <input type="password" name="password" class="form-control" placeholder="Внесете лозинка" />
                                 <i class="glyphicon glyphicon-lock form-control-feedback"></i>
                             </div>
 
                             <div class="form-group has-feedback">
                                 <label class="control-label" id="txt">Потврдете ја лозинката:</label>
-                                <input type="password" name="reg_password_confirm" class="form-control" placeholder="Потврдете ја лозинката" />
+                                <input type="password" name="confirm_password" class="form-control" placeholder="Потврдете ја лозинката" />
                                 <i class="glyphicon glyphicon-lock form-control-feedback"></i>
                             </div>
                             <br>
                             <center>
                                 <label id="txt">Одберете факултет:</label>
                                 <div id="txtdrp" class="pull-center">
-                                    <select>
-                                        <option value="" disabled selected>Универзитет "Гоце Делчев" Факултети</option>
-                                        <option value=""> Факултет 1 </option>
+                                    <select name = 'fax'>
+                                        
+                                        <?php
+                                            require('connect.php');
+
+                                        $fak_query = mysqli_query($rangiraj, " SELECT * FROM fakulteti ");
+                                        while ($row = mysqli_fetch_array($fak_query))
+                                        {
+
+                                        ?>            
+
+                                        <option value="<?php echo $row['ime_fakultet']; ?>" >                                           
+                                           
+
+                                          <?php  echo $row['ime_fakultet'];  ?>
+
+                                            
+
+                                       </option>
+                                        <?php
+                                            }
+                                        ?>    
                                     </select>
                                 </div>
 

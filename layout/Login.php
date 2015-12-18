@@ -39,29 +39,37 @@ function Login_user()
 	elseif (!empty($_POST['username']) && !empty($_POST['password'])) 
 	{
 		$username = mysqlI_real_escape_string($connection,$_POST['username']);
-		$sql = "SELECT username, password FROM korisnici WHERE username = '" . $username . "';";
+		$sql = "SELECT id_korisnik, username, password, fakultet FROM korisnici WHERE username = '" . $username . "';";
 		$result_of_login_check = mysqli_query($connection,$sql);
 		$number_of_rows = mysqli_num_rows($result_of_login_check);
 		if ($number_of_rows == 1)
 		{
 
 			$result_array = mysqli_fetch_array($result_of_login_check);
-			if ($_POST['password'] == $result_array['password'])
+			$password = $_POST['password'];
+			
+			if (password_verify($password , $result_array['password']))
 			{
 				$_SESSION['username'] = $result_array['username'];
 				$_SESSION['loggedin'] = true;
+				$_SESSION['uid'] = $result_array['id_korisnik'];
+				$fax = $_SESSION['fax'] = $result_array['fakultet'];
+
+				$fax_query = mysqli_query($connection, "SELECT * FROM fakulteti WHERE ime_fakultet = '$fax' ");
 				
-					header("Location: ../index.php?page=pocetna");
+				while($niza = mysqli_fetch_array($fax_query))
+				{
+					$_SESSION['id_fakultet'] = $niza['id_fakultet'];
+				}
+
+				
+				
+				header("Location: ../index.php?page=pocetna");
 			}
-				 
-			else 
+			else
 			{
-				echo "AEMRS";
+				header("Location: ../index.php?page=pocetna");
 			}
-		// else 
-		// 	{
-		// echo "AEMRS";
-		// 	}
 		}
 	}
 }
@@ -72,10 +80,10 @@ function Logout_user(){
 	if(isset($_SESSION['username'])){
     session_destroy();
     unset($_SESSION['username']);
-	header("Location: ../index.php?page=zanas");
+	header("Location: ../index.php?page=pocetna");
+
 }
 else{
 	header("Location: ../index.php?page=pocetna");
 }
 }
-

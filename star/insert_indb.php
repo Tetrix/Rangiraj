@@ -1,8 +1,14 @@
 <?php
 
+session_start();
+
 $connection=mysqli_connect('127.0.0.1','root','','baza');
 $utf8="SET NAMES UTF8";
 mysqli_query($connection,$utf8);
+
+$uid = $_SESSION['uid'];
+$fax = $_SESSION['id_fakultet'];
+
 
 
  //  Rejting za faks
@@ -17,20 +23,22 @@ $uslovi_fax=floatval($_POST['test3']);
 $fax_kom= mysqli_real_escape_string($connection,$_POST['fax_kom']);
 $vote1=($praksa+$kadar+$uslovi_fax)/3;
  
-$get_all1 = mysqli_query($connection, "SELECT * FROM fakultet_rang WHERE id_fakultet='8' ");
+// $get_all1 = mysqli_query($connection, "SELECT * FROM fakultet_rang, fakulteti WHERE fakulteti.ime_fakultet='$fax' AND fakulteti.id_fakultet==fakultet_rang.id_fakultet ");
+$get_all1 = mysqli_query($connection, "SELECT * FROM fakultet_rang WHERE id_fakultet = '$fax'");
+
 $num_rows1=mysqli_num_rows($get_all1)+1;
 
-$input_fax=" INSERT INTO fakultet_rang (id_fakultet,id_korisnik,praksa,kadar,uslovi,fax_kom) VALUES ('8','1','$praksa','$kadar','$uslovi_fax','$fax_kom') "; 
+$input_fax=" INSERT INTO fakultet_rang (id_fakultet,id_korisnik,praksa,kadar,uslovi,fax_kom) VALUES ('$fax','$uid','$praksa','$kadar','$uslovi_fax','$fax_kom') "; 
 mysqli_query($connection,$input_fax);
 
-$input_rejting_fax=" UPDATE fakulteti SET rejting_na_fakultet=(rejting_na_fakultet*($num_rows1-1)+$vote1)/$num_rows1 WHERE id_fakultet='8' ";
+$input_rejting_fax=" UPDATE fakulteti SET rejting_na_fakultet=(rejting_na_fakultet*($num_rows1-1)+$vote1)/$num_rows1 WHERE id_fakultet='$fax' ";
 mysqli_query($connection,$input_rejting_fax);
 
-$input_prosek_praksa=" UPDATE fakulteti SET prosek_praksa=(SELECT AVG (praksa) FROM fakultet_rang) WHERE id_fakultet='8' ";
+$input_prosek_praksa=" UPDATE fakulteti SET prosek_praksa=(SELECT AVG (praksa) FROM fakultet_rang) WHERE id_fakultet='$fax' ";
 mysqli_query($connection,$input_prosek_praksa);
-$input_prosek_kadar=" UPDATE fakulteti SET prosek_kadar=(SELECT AVG (kadar) FROM fakultet_rang) WHERE id_fakultet='8' ";
+$input_prosek_kadar=" UPDATE fakulteti SET prosek_kadar=(SELECT AVG (kadar) FROM fakultet_rang) WHERE id_fakultet='$fax' ";
 mysqli_query($connection,$input_prosek_kadar);
-$input_prosek_uslovi=" UPDATE fakulteti SET prosek_uslovi=(SELECT AVG (uslovi) FROM fakultet_rang) WHERE id_fakultet='8' ";
+$input_prosek_uslovi=" UPDATE fakulteti SET prosek_uslovi=(SELECT AVG (uslovi) FROM fakultet_rang) WHERE id_fakultet='$fax' ";
 mysqli_query($connection,$input_prosek_uslovi);
 
  header("Location: ../index.php?page=pocetna");
@@ -52,7 +60,7 @@ mysqli_query($connection,$input_prosek_uslovi);
  $get_all2 = mysqli_query($connection, "SELECT * FROM kampus_rang WHERE id_kampus='4' ");
  $num_rows2=mysqli_num_rows($get_all2)+1;
 
- $input_kamp=" INSERT INTO kampus_rang (id_kampus,id_korisnik,higiena,lokacija,uslovi,kam_komentar) VALUES ('4','1','$higiena','$lokacija','$uslovi_kampus','$kam_kom') ";
+ $input_kamp=" INSERT INTO kampus_rang (id_kampus,id_korisnik,higiena,lokacija,uslovi,kam_komentar) VALUES ('4','$uid','$higiena','$lokacija','$uslovi_kampus','$kam_kom') ";
  mysqli_query($connection,$input_kamp);
  $vote2=($higiena+$lokacija+$uslovi_kampus)/3;
  $input_rejting_kamp=" UPDATE kampus SET rejting_na_kampus=(rejting_na_kampus*($num_rows2-1)+$vote2)/$num_rows2 WHERE id_kampus='4' ";
@@ -86,7 +94,7 @@ if(($_SERVER['REQUEST_METHOD'] == "POST") && isset($_POST["form3"]))
 $get_all3 = mysqli_query($connection, "SELECT * FROM prof_rang WHERE id_prof='40' ");
 $num_rows3=mysqli_num_rows($get_all3)+1;
  
- $input_prof=" INSERT INTO prof_rang (id_prof,id_korisnik,odgovornost,predavanja,literatura,prof_kom) VALUES ('40','1','$odg','$pred','$lit','$prof_kom') ";
+ $input_prof=" INSERT INTO prof_rang (id_prof,id_korisnik,odgovornost,predavanja,literatura,prof_kom) VALUES ('40','$uid','$odg','$pred','$lit','$prof_kom') ";
  mysqli_query($connection,$input_prof);
  $vote3=($odg+$pred+$lit)/3;
  $input_rejting_prof=" UPDATE profesori SET rejting_na_profesori=(rejting_na_profesori*($num_rows3-1)+$vote3)/$num_rows3 WHERE id_profesor='40' ";
