@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($_
 	$password = $_POST['password'];
 	$confirm_password = $_POST['confirm_password'];
 
-	if ($password == $confirm_password)
+	if ($password == $confirm_password && filter_var($username, FILTER_VALIDATE_EMAIL))
 		{
 	    	register_user();
 		}

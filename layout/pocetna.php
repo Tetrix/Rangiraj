@@ -1,6 +1,5 @@
-<?php session_start();?>
+<?php /*session_start();*/?>
 <div class="main">
-
 
     <div class="row">
 
@@ -24,7 +23,7 @@
                         <div class="slide-1"></div>
                         <div class="hero">
                             <hgroup>
-                                <h1>PHP 3.2 rocks !!!</h1>
+                                <h1>Иднината е во твои раце !!!</h1>
                                 <h3>Стекни се со објективно мислење за околината во која ќе студираш</h3>
                             </hgroup>
 

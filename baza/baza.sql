@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 23, 2015 at 03:15 PM
+-- Generation Time: Jan 30, 2016 at 08:29 PM
 -- Server version: 10.0.17-MariaDB
 -- PHP Version: 5.6.14
 
@@ -40,12 +40,12 @@ CREATE TABLE `fakulteti` (
 --
 
 INSERT INTO `fakulteti` (`id_fakultet`, `ime_fakultet`, `rejting_na_fakultet`, `prosek_praksa`, `prosek_kadar`, `prosek_uslovi`) VALUES
-(8, 'Факултет за Информатика', 3.51282, 0, 0, 0),
+(8, 'Факултет за Информатика', 3.09509, 2.8125, 3.375, 3.625),
 (9, 'Електротехнички факултет', 0, 0, 0, 0),
 (10, 'Факултет за медицински науки', 0, 0, 0, 0),
 (11, 'Економски факултет', 0, 0, 0, 0),
 (12, 'Правен факултет', 0, 0, 0, 0),
-(13, 'Филолошки факултет', 0, 0, 0, 0);
+(13, 'Филолошки факултет', 5, 2.94118, 3.47059, 3.70588);
 
 -- --------------------------------------------------------
 
@@ -115,19 +115,23 @@ CREATE TABLE `fakultet_rang` (
 --
 
 INSERT INTO `fakultet_rang` (`id_fak_rang`, `id_fakultet`, `id_korisnik`, `praksa`, `kadar`, `uslovi`, `fax_kom`) VALUES
-(77, 8, 1, 4, 5, 3, 'Кучките од инстаграм'),
-(78, 8, 1, 5, 5, 5, 'Лелелел абе улав еден'),
-(79, 8, 1, 1, 3, 4, 'Аааа фесоре у фласк е воа'),
+(77, 8, 1, 4, 5, 3, 'Проба'),
+(78, 8, 1, 5, 5, 5, 'Лелеле бе'),
+(79, 8, 1, 1, 3, 4, 'коментирам'),
 (80, 8, 1, 1, 1, 4, 'тоа друг пат тоа'),
 (81, 8, 1, 1, 5, 3, 'Репортирам за ситуацијата јас'),
 (82, 8, 1, 4, 3, 5, 'Направиле воа сеа'),
-(83, 8, 1, 4, 4, 2, 'Хавус ќе е Скопје'),
-(84, 8, 1, 3, 4, 5, 'Мислам дека џандарите тепаа'),
+(83, 8, 1, 4, 4, 2, 'па пробувам'),
+(84, 8, 1, 3, 4, 5, 'Мислам дека работе'),
 (85, 8, 1, 4, 2, 5, 'Bejskoro'),
 (86, 8, 1, 2, 4, 5, 'afsafsaf'),
 (87, 8, 1, 3, 5, 4, 'JJOJOJO'),
 (88, 8, 1, 2, 3, 2, 'ara'),
-(89, 8, 1, 5, 4, 3, 'Uganda');
+(89, 8, 1, 5, 4, 3, 'Uganda'),
+(90, 8, 1, 4, 2, 5, 'коала'),
+(93, 8, 10, 1, 1, 1, 'Добро ајде'),
+(99, 8, 18, 1, 3, 2, 'ajde'),
+(100, 13, 20, 5, 5, 5, 'ококо');
 
 -- --------------------------------------------------------
 
@@ -149,7 +153,7 @@ CREATE TABLE `kampus` (
 --
 
 INSERT INTO `kampus` (`id_kampus`, `ime_kampus`, `rejting_na_kampus`, `prosek_higiena`, `prosek_lokacija`, `prosek_uslovi`) VALUES
-(4, 'Кампус 2', 3.25, 0, 0, 0),
+(4, 'Кампус 2', 3.51389, 4, 3.66667, 3.66667),
 (5, 'Кампус 3', 4.66667, 0, 0, 0),
 (6, 'Кампус 4', 0, 0, 0, 0);
 
@@ -199,7 +203,10 @@ CREATE TABLE `kampus_rang` (
 INSERT INTO `kampus_rang` (`id_kam_rang`, `id_kampus`, `id_korisnik`, `higiena`, `lokacija`, `uslovi`, `kam_komentar`) VALUES
 (18, 4, 1, 5, 4, 1, 'asaasas'),
 (23, 4, 1, 2, 4, 4, 'dada'),
-(24, 4, 1, 5, 4, 5, 'Dobro');
+(24, 4, 1, 5, 4, 5, 'Dobro'),
+(25, 4, 10, 2, 2, 2, 'Ајде и тука работеее'),
+(26, 4, 12, 5, 5, 5, 'ДОБРРООО АЈДЕ'),
+(27, 4, 21, 5, 3, 5, 'супер е ');
 
 -- --------------------------------------------------------
 
@@ -210,15 +217,20 @@ INSERT INTO `kampus_rang` (`id_kam_rang`, `id_kampus`, `id_korisnik`, `higiena`,
 CREATE TABLE `korisnici` (
   `id_korisnik` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(20) NOT NULL
+  `password` varchar(255) NOT NULL,
+  `fakultet` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `korisnici`
 --
 
-INSERT INTO `korisnici` (`id_korisnik`, `username`, `password`) VALUES
-(1, 'deni.101615@students.ugd.edu.mk', '');
+INSERT INTO `korisnici` (`id_korisnik`, `username`, `password`, `fakultet`) VALUES
+(18, 'puri@yahoo.com', '$2y$10$m3FPslJhYydFTw7zDX2QXufQwWUAs0tLJxXFbkd.3AQoydNcmJ6Pi', 'Факултет за Информатика'),
+(19, 'kole@yahoo.com', '$2y$10$axk/RyB6cibdeESW4ggdw.3WiyFw1RE3TLoD9pcCb5xz703U3kZeW', 'Факултет за медицински науки'),
+(20, 'alex@yahoo.com', '$2y$10$sojHbizWVFBpvPiBlXKVN.6i8jwb30.mGKeB4PqxP3DaWA/k4xUg6', 'Филолошки факултет'),
+(21, 'mile@yahoo.com', '$2y$10$ctVZ5tlF0L0jdYU82XnbjO7fauL1O5i66JVwcq3tQotrFKKjW2Dx2', 'Факултет за медицински науки'),
+(24, 'qw@yahoo.com', '$2y$10$5dy7Tx.wtyQLqbj7ZwGx3uTtJmET/Zzgdo/jscR9V4Y9zhK0u4jjC', 'Факултет за Информатика');
 
 -- --------------------------------------------------------
 
@@ -242,7 +254,7 @@ CREATE TABLE `profesori` (
 
 INSERT INTO `profesori` (`id_profesor`, `ime_prezime_prof`, `rejting_na_profesori`, `prosek_odgovornost`, `prosek_predavanja`, `prosek_literatura`, `prof_img`) VALUES
 (39, 'Сашо Коцевски', 1.48438, 0, 0, 0, ''),
-(40, 'Цвета Мартиновска', 0, 0, 0, 0, ''),
+(40, 'Цвета Мартиновска', 2.66667, 2.8, 2.8, 2.8, ''),
 (41, 'Зоран Утковски', 0, 0, 0, 0, ''),
 (42, 'Игор Стојановиќ', 0, 0, 0, 0, ''),
 (43, 'Благој Делипетрев', 0, 0, 0, 0, '');
@@ -269,7 +281,10 @@ CREATE TABLE `prof_rang` (
 
 INSERT INTO `prof_rang` (`id_prof_rang`, `id_prof`, `id_korisnik`, `odgovornost`, `predavanja`, `literatura`, `prof_kom`) VALUES
 (11, 39, 1, 5, 5, 5, 'aaaa'),
-(19, 39, 1, 1, 1, 1, 'agagagaga');
+(19, 39, 1, 1, 1, 1, 'agagagaga'),
+(20, 40, 10, 5, 5, 5, 'Петка за мене'),
+(21, 40, 11, 1, 1, 1, 'ајдеее'),
+(22, 40, 21, 2, 2, 2, 'добро ајде работе');
 
 --
 -- Indexes for dumped tables
@@ -370,7 +385,7 @@ ALTER TABLE `fakultet_profesor`
 -- AUTO_INCREMENT for table `fakultet_rang`
 --
 ALTER TABLE `fakultet_rang`
-  MODIFY `id_fak_rang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+  MODIFY `id_fak_rang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 --
 -- AUTO_INCREMENT for table `kampus`
 --
@@ -385,12 +400,12 @@ ALTER TABLE `kampus_profesor`
 -- AUTO_INCREMENT for table `kampus_rang`
 --
 ALTER TABLE `kampus_rang`
-  MODIFY `id_kam_rang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_kam_rang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `korisnici`
 --
 ALTER TABLE `korisnici`
-  MODIFY `id_korisnik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_korisnik` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT for table `profesori`
 --
@@ -400,7 +415,7 @@ ALTER TABLE `profesori`
 -- AUTO_INCREMENT for table `prof_rang`
 --
 ALTER TABLE `prof_rang`
-  MODIFY `id_prof_rang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_prof_rang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- Constraints for dumped tables
 --

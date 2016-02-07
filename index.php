@@ -1,10 +1,6 @@
 <?php
-// if(isset($_SESSION['username'])){
 	include("layout/header.php");
-//}
-// else{
-// 	include("layout/header.php");
-// }
+
 
 
 
@@ -37,56 +33,56 @@ else if( $_GET['page'] == "zanas")
 	include("layout/zanas.php");
 	}
 	
-else if( $_GET['page'] == "najavise")
+else if(isset($_GET['page']) && $_GET['page'] == "najavise")
 	{
 	include("layout/najavise.php");
 	}
 	
-else if( $_GET['page'] == "registrirajse")
+else if(isset($_GET['page']) &&  $_GET['page'] == "registrirajse")
 	{
 	include("layout/registrirajse.php");
 	}
 
-else if( $_GET['page'] ==  "profesori-rezultati")
+else if(isset($_GET['page']) && $_GET['page'] == "profesori-rezultati")
 	{
 	include("layout/sidepanelrezultati.php");
     include("layout/proff_rezultati.php");
 	}
 
-else if( $_GET['page'] ==  "fakultet-rezultati")
+else if(isset($_GET['page']) && $_GET['page'] ==  "fakultet-rezultati")
 	{
 	include("layout/sidepanelrezultati.php");
     include("layout/fakultet-rezultati.php");
 	}
 
-else if( $_GET['page'] ==  "kampus-rezultati")
+else if(isset($_GET['page']) && $_GET['page'] ==  "kampus-rezultati")
 	{
 	include("layout/sidepanelrezultati.php");
     include("layout/kampus-rezultati.php");
 	}
 	
-else if( $_GET['page'] ==  "lenta-fakultet")
+else if(isset($_GET['page']) && $_GET['page'] ==  "lenta-fakultet")
 	{
 	include("layout/sidepanelrezultati.php");
     include("layout/lenta-fakultet.php");
 	}
 
-else if( $_GET['page'] ==  "lenta-profesori")
+else if(isset($_GET['page']) && $_GET['page'] ==  "lenta-profesori")
 	{
 	include("layout/sidepanelrezultati.php");
     include("layout/lenta-profesori.php");
 	}
 
-else if( $_GET['page'] ==  "lenta-kampus")
+else if(isset($_GET['page']) && $_GET['page'] ==  "lenta-kampus")
 	{
 	include("layout/sidepanelrezultati.php");
     include("layout/lenta-kampus.php");
 	}
 
-#else 
-#{
-#include("layout/pocetna.php");
-#}	
+else 
+{
+include("layout/pocetna.php");
+}	
 	
 ?>
 

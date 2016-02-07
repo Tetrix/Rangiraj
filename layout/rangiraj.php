@@ -212,20 +212,27 @@
 function check() {
  if((one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false))
    {
-    alert("Рангирајте гo полет Пракса");
+     alert("Рангирајте гo полет Пракса");
    }
 if((six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false))
    {
    alert("Рангирајте го полето Кадар");
+
    }
 if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false))
    {
     alert("Рангирајте го полето Услови");
+
    }
    
 if(kom1.value=="")
 	{
-    alert("Внесете коментар");
+        window.location.href = "http://www.google.com";
+
+    	}
+
+
+
 	}
 	}
 function check2(){
