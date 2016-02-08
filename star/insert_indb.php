@@ -8,6 +8,7 @@ mysqli_query($connection,$utf8);
 
 $uid = $_SESSION['uid'];
 $fax = $_SESSION['id_fakultet'];
+$kam = $_SESSION['id_kampus'];
 
 
 
@@ -59,20 +60,20 @@ mysqli_query($connection,$input_prosek_uslovi);
  $uslovi_kampus=floatval($_POST['test6']);
  $kam_kom= mysqli_real_escape_string($connection,$_POST['kam_kom']);
 
- $get_all2 = mysqli_query($connection, "SELECT * FROM kampus_rang WHERE id_kampus='4' ");
+ $get_all2 = mysqli_query($connection, "SELECT * FROM kampus_rang WHERE id_kampus='$kam' ");
  $num_rows2=mysqli_num_rows($get_all2)+1;
 
- $input_kamp=" INSERT INTO kampus_rang (id_kampus,id_korisnik,higiena,lokacija,uslovi,kam_komentar) VALUES ('4','$uid','$higiena','$lokacija','$uslovi_kampus','$kam_kom') ";
+ $input_kamp=" INSERT INTO kampus_rang (id_kampus,id_korisnik,higiena,lokacija,uslovi,kam_komentar) VALUES ('$kam','$uid','$higiena','$lokacija','$uslovi_kampus','$kam_kom') ";
  mysqli_query($connection,$input_kamp);
  $vote2=($higiena+$lokacija+$uslovi_kampus)/3;
- $input_rejting_kamp=" UPDATE kampus SET rejting_na_kampus=(rejting_na_kampus*($num_rows2-1)+$vote2)/$num_rows2 WHERE id_kampus='4' ";
+ $input_rejting_kamp=" UPDATE kampus SET rejting_na_kampus=(rejting_na_kampus*($num_rows2-1)+$vote2)/$num_rows2 WHERE id_kampus='$kam' ";
  mysqli_query($connection,$input_rejting_kamp);
 
- $input_prosek_higiena=" UPDATE kampus SET prosek_higiena=(SELECT AVG (higiena) FROM kampus_rang) WHERE id_kampus='4' ";
+ $input_prosek_higiena=" UPDATE kampus SET prosek_higiena=(SELECT AVG (higiena) FROM kampus_rang) WHERE id_kampus='$kam' ";
 mysqli_query($connection,$input_prosek_higiena);
-$input_prosek_lokacija=" UPDATE kampus SET prosek_lokacija=(SELECT AVG (lokacija) FROM kampus_rang) WHERE id_kampus='4' ";
+$input_prosek_lokacija=" UPDATE kampus SET prosek_lokacija=(SELECT AVG (lokacija) FROM kampus_rang) WHERE id_kampus='$kam' ";
 mysqli_query($connection,$input_prosek_lokacija);
-$input_prosek_uslovi=" UPDATE kampus SET prosek_uslovi=(SELECT AVG (uslovi) FROM kampus_rang) WHERE id_kampus='4' ";
+$input_prosek_uslovi=" UPDATE kampus SET prosek_uslovi=(SELECT AVG (uslovi) FROM kampus_rang) WHERE id_kampus='$kam' ";
 mysqli_query($connection,$input_prosek_uslovi);
 
  header("Location: ../index.php?page=pocetna");

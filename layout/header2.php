@@ -107,7 +107,6 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand navbar_text" href="#">Rangirajme.comlu.com</a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="myNavbar">

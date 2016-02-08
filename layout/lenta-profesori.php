@@ -1,5 +1,3 @@
-
-
 <div class="main2">
 <br>
 	<div class="row">

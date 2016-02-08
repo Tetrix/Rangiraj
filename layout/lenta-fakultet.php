@@ -173,10 +173,5 @@ while ($row = $result->fetch_assoc())
  	 		obj.style.color="#33ff33";
  	 	}
 
- 	 
-
-
-
- 	
 
 	</script>

@@ -6,8 +6,6 @@
 
             <title>Register</title>
 
-
-
         </head>
 
         <BR>

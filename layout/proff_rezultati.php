@@ -1,9 +1,6 @@
 <div class="main2">
     <br>
 
-
-
-
     <form action="" method="post">
         <div class="row">
             <div class="col-xs-6">
@@ -65,6 +62,7 @@ while ($row = $result->fetch_assoc())
 
 
             <div class="col-xs-6">
+            </br>
                 <button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp">Потврди</button>
 
 

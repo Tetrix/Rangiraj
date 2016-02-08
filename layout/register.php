@@ -3,10 +3,6 @@
 
 require('connect.php');
 
-// $connection=mysqli_connect('127.0.0.1','root','','baza');
-// $utf8="SET NAMES UTF8";
-// mysqli_query($connection,$utf8);
-
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($_POST['password']) && isset($_POST['confirm_password']))
 {
 
