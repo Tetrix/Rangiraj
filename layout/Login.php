@@ -1,6 +1,4 @@
 
-
-
 <?php
 // Konektirame se so baza, ne znam zaso
 // ne ste gi upotrebile veke funkciite ja so gi napisa

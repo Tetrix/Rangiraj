@@ -10,10 +10,23 @@
 			
 					<div class="jumbotron" id="jumboproff">
 						
-<?php 
+
+
+
+<form action = "" method = "POST">
+
+<select class="form-control" id="sel1" name="ime_prof">
+<?php
+ 
 require 'connect.php';
 
-if($result = $rangiraj->query("SELECT ime_prezime_prof FROM profesori "))
+
+session_start();
+
+$id_fax = $_SESSION['id_fakultet'];
+
+
+if($result = $rangiraj->query("SELECT ime_prezime_prof FROM profesori WHERE id_fakultet = $id_fax"))
 {
 
 while ($row = $result->fetch_assoc())
@@ -21,12 +34,29 @@ while ($row = $result->fetch_assoc())
 
 ?>
 
-							
-								<a href="#" data-reveal-id="myModal5"  class="nounderline"><?php 
+
+                        <option>
+                            <?php 
 						
-							  echo '★  ' ,$row['ime_prezime_prof'] , '<br>';  }}
+							  echo $row['ime_prezime_prof'] ;  }}
 	                            
-?> </a>
+							?>
+                        </option>
+
+                </select>
+
+            <div class="col-xs-6">
+            </br>
+            	<a href="#" data-reveal-id="myModal5"  class="nounderline">
+                <button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp"  >Потврди</button>
+                </a>
+
+
+            </div>
+        </div>    
+
+
+
 					</div>
 				
 			</div>
@@ -34,10 +64,16 @@ while ($row = $result->fetch_assoc())
 <div class="col-sm-3"> </div>
 
 </div>
+</form>
 
 
 
+<?php
+if (isset($_POST['ime_prof'])){
+	$ime_prof = $_POST['ime_prof'];
+}
 
+?>
 
 <!--- PROFESORI KRAJ  -->
 
