@@ -13,9 +13,9 @@
 
 
 
-<form action = "" method = "POST">
+<form action = "star/insert_indb.php" method = "post">
 
-<select class="form-control" id="sel1" name="ime_prof">
+<select class="form-control" id="sel1" name="ime_profesor">
 <?php
  
 require 'connect.php';
@@ -43,16 +43,18 @@ while ($row = $result->fetch_assoc())
 							?>
                         </option>
 
-                </select>
+</select>
 
             <div class="col-xs-6">
-            </br>
-            	<a href="#" data-reveal-id="myModal5"  class="nounderline">
-                <button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp"  >Потврди</button>
-                </a>
+            	
+
+            	<div data-reveal-id="myModal5"  class="nounderline">
+            	<!-- <a href="#" data-reveal-id="myModal5"  class="nounderline" > -->
+                <button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp" >Потврди</button>
+                <!-- </a> -->
 
 
-            </div>
+            	</div>
         </div>    
 
 
@@ -68,12 +70,6 @@ while ($row = $result->fetch_assoc())
 
 
 
-<?php
-if (isset($_POST['ime_prof'])){
-	$ime_prof = $_POST['ime_prof'];
-}
-
-?>
 
 <!--- PROFESORI KRAJ  -->
 

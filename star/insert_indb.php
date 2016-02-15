@@ -10,6 +10,13 @@ $uid = $_SESSION['uid'];
 $fax = $_SESSION['id_fakultet'];
 $kam = $_SESSION['id_kampus'];
 
+if (isset($_POST['ime_profesor'])){
+$ime_prof = $_POST['ime_profesor'];
+echo $ime_prof;
+}
+else{
+	echo "Gimli";
+}
 
 
  //  Rejting za faks
@@ -94,20 +101,20 @@ if(($_SERVER['REQUEST_METHOD'] == "POST") && isset($_POST["form3"]))
  $pred=floatval($_POST['test8']);
  $lit=floatval($_POST['test9']);
  $prof_kom= mysqli_real_escape_string($connection,$_POST['prof_kom']);
-$get_all3 = mysqli_query($connection, "SELECT * FROM prof_rang WHERE id_prof='40' ");
+$get_all3 = mysqli_query($connection, "SELECT * FROM prof_rang WHERE id_prof=$ime_prof ");
 $num_rows3=mysqli_num_rows($get_all3)+1;
  
- $input_prof=" INSERT INTO prof_rang (id_prof,id_korisnik,odgovornost,predavanja,literatura,prof_kom) VALUES ('40','$uid','$odg','$pred','$lit','$prof_kom') ";
+ $input_prof=" INSERT INTO prof_rang (id_prof,id_korisnik,odgovornost,predavanja,literatura,prof_kom) VALUES ($ime_prof,'$uid','$odg','$pred','$lit','$prof_kom') ";
  mysqli_query($connection,$input_prof);
  $vote3=($odg+$pred+$lit)/3;
- $input_rejting_prof=" UPDATE profesori SET rejting_na_profesori=(rejting_na_profesori*($num_rows3-1)+$vote3)/$num_rows3 WHERE id_profesor='40' ";
+ $input_rejting_prof=" UPDATE profesori SET rejting_na_profesori=(rejting_na_profesori*($num_rows3-1)+$vote3)/$num_rows3 WHERE id_profesor=$ime_prof ";
  mysqli_query($connection,$input_rejting_prof);
 
-  $input_prosek_odgovornost=" UPDATE profesori SET prosek_odgovornost=(SELECT AVG (odgovornost) FROM prof_rang) WHERE id_profesor='40' ";
+  $input_prosek_odgovornost=" UPDATE profesori SET prosek_odgovornost=(SELECT AVG (odgovornost) FROM prof_rang) WHERE id_profesor=$ime_prof ";
   mysqli_query($connection,$input_prosek_odgovornost);
-$input_prosek_predavanja=" UPDATE profesori SET prosek_predavanja=(SELECT AVG (predavanja) FROM prof_rang) WHERE id_profesor='40' ";
+$input_prosek_predavanja=" UPDATE profesori SET prosek_predavanja=(SELECT AVG (predavanja) FROM prof_rang) WHERE id_profesor=$ime_prof ";
   mysqli_query($connection,$input_prosek_predavanja);
-  $input_prosek_literatura=" UPDATE profesori SET prosek_literatura=(SELECT AVG (literatura) FROM prof_rang) WHERE id_profesor='40' ";
+  $input_prosek_literatura=" UPDATE profesori SET prosek_literatura=(SELECT AVG (literatura) FROM prof_rang) WHERE id_profesor=$ime_prof ";
   mysqli_query($connection,$input_prosek_literatura);
 
  header("Location: ../index.php?page=pocetna");
