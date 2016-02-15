@@ -108,7 +108,7 @@
 						<textarea rows="4" cols="60" name="fax_kom" id="resizeboxdisable1" placeholder="Внеси коментар"></textarea>
 						<br>
 						
-						<button type="submit" class="btn btn-sm btn-primary sharp" id="button1_val" name="form1" onclick="check()" ><div id="txt" > Потврди</div> </button>
+						<button type="submit" class="btn btn-sm btn-primary sharp"  id="button1_val" name="form1" onclick="check()" ><div id="txt" > Потврди</div> </button>
 						</form>
 						<a class="close-reveal-modal">&#215;</a>
 						
@@ -208,37 +208,41 @@
    var fourteen2= document.getElementById("29");
    var fifteen2= document.getElementById("30");
    var kom1=document.getElementById("resizeboxdisable1");
-   var kom2=document.getElementById("resizeboxdisable2");
+   var kom2=document.ge652483004891186tElementById("resizeboxdisable2");
+   var fax_btn=document.ge652483004891186tElementById("button1_val");
+
 function check() {
- if((one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false))
+
+praksa=(one.checked == false) && (two.checked == false) && (three.checked == false) && (four.checked == false) && (five.checked == false);
+ if (praksa)
    {
      alert("Рангирајте гo полет Пракса");
    }
-if((six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false))
+kadar=(six.checked == false) && (seven.checked == false) && (eight.checked == false) && (nine.checked == false) && (ten.checked == false);
+if (kadar)
    {
    alert("Рангирајте го полето Кадар");
 
    }
-if((eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false))
+uslovi=(eleven.checked == false) && (twelve.checked == false) && (thirteen.checked == false) && (fourteen.checked == false) && (fifteen.checked == false);
+if (uslovi)
    {
     alert("Рангирајте го полето Услови");
 
    }
-   
-if(kom1.value=="")
-	{
-        window.location.href = "http://www.google.com";
+if (uslovi || praksa || kadar)
+{
+<?php $_POST['form1']=False; ?>
 
-    	}
-
-
-
+}
 	}
-	}
+
+
 function check2(){
  if((one2.checked == false) && (two2.checked == false) && (three2.checked == false) && (four2.checked == false) && (five2.checked == false))
    {
    alert("Рангирајте го полето хигиена");
+	
    }
  if((six2.checked == false) && (seven2.checked == false) && (eight2.checked == false) && (nine2.checked == false) && (ten2.checked == false))
    {
@@ -248,10 +252,7 @@ function check2(){
    {
     alert("Рангирајте го полето услови");
    }
-  if(kom2.value=="")
-	{
-    alert("Внесете коментар");
-	}
+
 }
 </script>
 
@@ -263,6 +264,7 @@ function check2(){
 				
 				</div>
 </div>
+
 
 
 <script type="text/javascript">
