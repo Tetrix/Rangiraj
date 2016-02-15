@@ -2,7 +2,7 @@
 
 session_start();
 
-$connection=mysqli_connect('127.0.0.1','root','','baza');
+$connection=mysqli_connect('localhost','root','root','baza');
 $utf8="SET NAMES UTF8";
 mysqli_query($connection,$utf8);
 
@@ -45,6 +45,10 @@ mysqli_query($connection,$input_prosek_uslovi);
  header("Location: ../index.php?page=pocetna");
  exit();
 }
+else if (empty($_POST["test1"]) or empty($_POST["test2"]) or empty($_POST["test3"]))
+{
+header("Location: ../index.php?page=rangiraj");
+}
 
 
 }
@@ -79,6 +83,11 @@ mysqli_query($connection,$input_prosek_uslovi);
  header("Location: ../index.php?page=pocetna");
  exit();
 }
+else if (empty($_POST["test4"]) or empty($_POST["test5"]) or empty($_POST["test6"]))
+{
+header("Location: ../index.php?page=rangiraj");
+}
+
 }
 
 
