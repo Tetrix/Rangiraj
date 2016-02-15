@@ -2,7 +2,7 @@
 
 session_start();
 
-$connection=mysqli_connect('localhost','root','root','baza');
+$connection=mysqli_connect('localhost','root','','baza');
 $utf8="SET NAMES UTF8";
 mysqli_query($connection,$utf8);
 
