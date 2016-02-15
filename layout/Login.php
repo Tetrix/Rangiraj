@@ -8,13 +8,37 @@
 // mysqli_query($connection,$utf8);
 #require 'connect.php';
 
+
+function populate(){
+require('connect.php');
+
+for ($i = 0; $i <= 50; $i++)
+{
+
+$odg=rand(1,5);
+$pre=rand(1,5);
+$lit=rand(1,5);
+
+$sql="INSERT INTO prof_rang(id_prof, id_korisnik, odgovornost, predavanja, literatura, prof_kom) VALUES ('41','25','$odg','$pre','$lit', 'Супер');";
+
+mysqli_query($rangiraj,$sql);
+}
+}
+
+
+
+
+
+
 session_start();
 //Proveruvame so saka da naprae user-o
 if (isset($_POST["logout"])) {
 	Logout_user();
+	populate();
 }
 elseif (isset($_POST["login"])) {
 	Login_user();
+	populate();
 }
 
 //U baza:
@@ -70,9 +94,14 @@ function Login_user()
 			}
 			else
 			{
-				header("Location: ../index.php?page=pocetna");
+				header("Location: ../index.php?page=najavise");
 			}
+
 		}
+		else
+			{
+				header("Location: ../index.php?page=najavise");
+			}
 	}
 }
 

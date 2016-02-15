@@ -1,4 +1,4 @@
-<div class="main2">
+<div class="mainfrezultati">
     <br>
     <form action="index.php?page=lenta-kampus" method="post">
         <div class="row">

@@ -76,12 +76,28 @@
     top: 20%;
     left: 26%;
     right: 0;
+    bottom: 0;
     background: rgba(45, 62, 82, 0.8);
     z-index: -1;
     padding: 15px !Important;
     font-family: ubuntu;
     overflow-y: scroll !important;
     overflow-x: hidden;
+}
+
+.mainfrezultati {
+    position: fixed;
+    color: black;
+    top: 20%;
+    left: 26%;
+    right: 0;
+    background: rgba(45, 62, 82, 0.8);
+    z-index: -1;
+    padding: 15px !Important;
+    font-family: ubuntu;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+
 }
 
 /* disabling the re-size ability in the foundation's modal "cinema view" comment box */

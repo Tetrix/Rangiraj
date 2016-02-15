@@ -124,7 +124,8 @@ $num_rows3=mysqli_num_rows($get_all3)+1;
  $input_prof=" INSERT INTO prof_rang (id_prof,id_korisnik,odgovornost,predavanja,literatura,prof_kom) VALUES ($id_prof,'$uid','$odg','$pred','$lit','$prof_kom') ";
  mysqli_query($connection,$input_prof);
  $vote3=($odg+$pred+$lit)/3;
- $input_rejting_prof=" UPDATE profesori SET rejting_na_profesori=(rejting_na_profesori*($num_rows3-1)+$vote3)/$num_rows3 WHERE id_profesor=$id_prof ";
+ // $input_rejting_prof=" UPDATE profesori SET rejting_na_profesori=(rejting_na_profesori*($num_rows3-1)+$vote3)/$num_rows3 WHERE id_profesor=$id_prof ";
+ $input_rejting_prof= "UPDATE profesori SET rejting_na_profesori = (prosek_odgovornost + prosek_predavanja + prosek_literatura)/3 WHERE id_profesor=$id_prof";
  mysqli_query($connection,$input_rejting_prof);
 
   $input_prosek_odgovornost=" UPDATE profesori SET prosek_odgovornost=(SELECT AVG (odgovornost) FROM prof_rang) WHERE id_profesor=$id_prof ";
@@ -137,6 +138,10 @@ $input_prosek_predavanja=" UPDATE profesori SET prosek_predavanja=(SELECT AVG (p
  header("Location: ../index.php?page=pocetna");
  exit();
  }
+ else if (empty($_POST["test7"]) or empty($_POST["test8"]) or empty($_POST["test9"]))
+{
+header("Location: ../index.php?page=rangiraj");
+}
 }
 
 

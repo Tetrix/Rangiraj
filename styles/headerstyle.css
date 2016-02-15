@@ -72,7 +72,7 @@
     
 }
 #button1 {
-    
+    display: none;
 }
 
 .glyphicon.glyphicon-log-in {}
@@ -139,12 +139,12 @@
 /*Login / Logout JS start */
 
 #l1 {
-    /*display: none;*/
+    display:none;
     color: white !important;
     font-family: Ubuntu;
     font-weight: 400;
     font-size: 140%;
-   /* margin-top: 5%;*/
+    margin-top: 5%;
 }
 
 /*Login / Logout JS end*/
