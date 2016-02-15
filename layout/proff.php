@@ -13,7 +13,7 @@
 
 
 
-<form action = "star/insert_indb.php" method = "post">
+
 
 <select class="form-control" id="sel1" name="ime_profesor">
 <?php
@@ -35,7 +35,7 @@ while ($row = $result->fetch_assoc())
 ?>
 
 
-                        <option>
+                        <option id="opt1">
                             <?php 
 						
 							  echo $row['ime_prezime_prof'] ;  }}
@@ -49,9 +49,10 @@ while ($row = $result->fetch_assoc())
             	
 
             	<div data-reveal-id="myModal5"  class="nounderline">
-            	<!-- <a href="#" data-reveal-id="myModal5"  class="nounderline" > -->
-                <button id="button" type="submit" class="btn btn-primary btn-md pull-left sharp" >Потврди</button>
-                <!-- </a> -->
+            	   <a href="#" data-reveal-id="myModal5"  class="nounderline" > 
+                <button id="btn1" type="submit" class="btn btn-primary btn-md pull-left sharp">
+                Потврди </button></a> 
+                 
 
 
             	</div>
@@ -66,7 +67,7 @@ while ($row = $result->fetch_assoc())
 <div class="col-sm-3"> </div>
 
 </div>
-</form>
+
 
 
 
@@ -81,9 +82,10 @@ while ($row = $result->fetch_assoc())
 						
 						<!-- Zvezdi prof -->
 				    <form action="star/insert_indb.php" id="form3_validation" method="post">
-					
+					  
 				    <li>	Одговорност:
-					<br> 
+					<br>
+     <input type="hidden" name="ime_rang_prof" id="hidden" value="" /> 
      <input class="star" type="radio" name="test7" id="1" value="1"/>
     <input class="star" type="radio" name="test7" id="2"value="2"/>
     <input class="star" type="radio" name="test7" id="3"value="3"/>
@@ -167,6 +169,14 @@ if(kom1.value=="")
     alert("Внесете коментар");
 	}
 	}
+</script>
+
+<script>
+document.getElementById("btn1").addEventListener("click",hidden);
+function hidden(){
+hidden=document.getElementById('sel1').value;
+document.getElementById('hidden').value=hidden;
+}
 </script>
 
 
