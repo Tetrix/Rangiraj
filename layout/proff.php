@@ -1,21 +1,32 @@
-<div class="main" id="pozadina">
+<div class="mainwwrang">
 
-<br><br><br>
+
+
+<div class="main">
+
+<br><br><br><br><br>
 
 <div class="row">
-
-<div class="col-sm-3"> </div>
-
-			<div class="col-sm-6">
-			
-					<div class="jumbotron" id="jumboproff">
+    <div class="col-sm-3"> </div>
+        
+        <div class="col-sm-6">
+			     <div class="jumbotron" id="jumboproff">
 						
+            <center>
 
+              <span class="glyphicon glyphicon-tasks"> </span>
 
+            <H2 class="navbar_text33">Одберете го професорот за кој ќе гласате</H2>
+            
+            <H2 class="navbar_text33">Изборот ви е ограничен во однос на тоа кој факултет одбравте при регистрација</H2>
 
+            </center>
+            <br>
 
 
 <select class="form-control" id="sel1" name="ime_profesor">
+
+
 <?php
  
 require 'connect.php';
@@ -45,13 +56,16 @@ while ($row = $result->fetch_assoc())
 
 </select>
 
-            <div class="col-xs-6">
             	
 
             	<div data-reveal-id="myModal5"  class="nounderline">
-            	   <a href="#" data-reveal-id="myModal5"  class="nounderline" > 
-                <button id="btn1" type="submit" class="btn btn-primary btn-md pull-left sharp">
-                Потврди </button></a> 
+            	   <a href="#" data-reveal-id="myModal5"  class="nounderline" >
+
+                  <br>
+
+                  
+                <button id="btn1" type="submit" class="btn btn-primary btn-md btn-block sharp">
+                Гласај </button></a> 
                  
 
 
@@ -182,3 +196,4 @@ document.getElementById('hidden').value=hidden;
 
 </div>
 
+</div>

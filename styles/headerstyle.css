@@ -59,6 +59,15 @@
     font-family: Ubuntu;
     text-align: center !important;
 }
+
+.navbar_text33 {
+    font-size: 110%;
+    vertical-align: middle !important;
+    color: White !important;
+    font-style: bold;
+    font-family: Ubuntu;
+    text-align: center !important;
+}
 .bg {
     background: #344A5F;
 }

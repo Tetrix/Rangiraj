@@ -14,7 +14,7 @@ if(isset($_POST["ime_fax"]))
 $name_fax=$_POST["ime_fax"];
 
 
-if($result = $rangiraj->query("SELECT * FROM fakulteti WHERE ime_fakultet='$name_fax' "))
+if($result = $rangiraj->query("SELECT * FROM  	fakulteti WHERE ime_fakultet='$name_fax' "))
 {
 
 while ($row = $result->fetch_assoc())
@@ -105,7 +105,7 @@ while ($row = $result->fetch_assoc())
 			<div class="row">
 			
 				<div class="col-xs-2">
-				<h5  class="rezultaticol1">Пракса</h5><center><?php echo $row2['praksa']; ?></center>
+				<h5 class="rezultaticol1">Пракса</h5><center><?php echo $row2['praksa']; ?></center>
 				</div>
 				
 				<div class="col-xs-2"> </div>
